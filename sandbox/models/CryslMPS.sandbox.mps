@@ -28,6 +28,9 @@
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
+        <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+      </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
         <child id="1317894735999304826" name="imports" index="2OODSX" />
@@ -37,20 +40,41 @@
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
+      <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
     </language>
     <language id="8e9fbf67-e9d6-4aec-bf8d-e721059602cb" name="CryslMPS">
       <concept id="6468440878176773971" name="CryslMPS.structure.JVMTypeRef" flags="ng" index="13$MfA">
         <reference id="6468440878176773972" name="type" index="13$Mfx" />
+      </concept>
+      <concept id="6468440878177050541" name="CryslMPS.structure.ObjectRef" flags="ng" index="13BPGo">
+        <reference id="6468440878177050542" name="obj" index="13BPGr" />
+      </concept>
+      <concept id="6468440878179050804" name="CryslMPS.structure.MethodReference" flags="ng" index="13JI61">
+        <reference id="6468440878179050805" name="method" index="13JI60" />
+      </concept>
+      <concept id="5935400143408046318" name="CryslMPS.structure.Par" flags="ng" index="3DZmol">
+        <child id="6468440878177056668" name="obj" index="13BRcD" />
+      </concept>
+      <concept id="5935400143408046316" name="CryslMPS.structure.Method" flags="ng" index="3DZmon">
+        <property id="6468440878177056672" name="methodName" index="13BRcl" />
+        <child id="5935400143408046414" name="parList" index="3DZmuP" />
       </concept>
       <concept id="5935400143408046307" name="CryslMPS.structure.ObjectDecl" flags="ng" index="3DZmoo">
         <child id="5935400143408046379" name="type" index="3DZmvg" />
       </concept>
       <concept id="5935400143408046298" name="CryslMPS.structure.Domainmodel" flags="ng" index="3DZmox">
         <child id="6468440878176779137" name="javaType" index="13$NWO" />
+        <child id="5935400143408046399" name="req_events" index="3DZmv4" />
         <child id="5935400143408046397" name="usage" index="3DZmv6" />
+      </concept>
+      <concept id="5935400143408046302" name="CryslMPS.structure.RequiredBlock" flags="ng" index="3DZmo_">
+        <child id="5935400143408046422" name="req_event" index="3DZmuH" />
       </concept>
       <concept id="5935400143408046300" name="CryslMPS.structure.UseBlock" flags="ng" index="3DZmoB">
         <child id="5935400143408046425" name="objects" index="3DZmuy" />
+      </concept>
+      <concept id="5935400143408046364" name="CryslMPS.structure.Aggregate" flags="ng" index="3DZmvB">
+        <child id="5935400143408046428" name="methodList" index="3DZmuB" />
       </concept>
       <concept id="5935400143408046348" name="CryslMPS.structure.JvmType" flags="ng" index="3DZmvR" />
     </language>
@@ -64,6 +88,7 @@
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="8864856114140038681" name="com.mbeddr.core.expressions.structure.DoubleType" flags="ng" index="2fgwQN" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
@@ -81,16 +106,65 @@
     </node>
     <node concept="3DZmoB" id="5B4xbkqmxww" role="3DZmv6">
       <node concept="3DZmoo" id="5B4xbkqmxwy" role="3DZmuy">
-        <property role="TrG5h" value="akjnasjk" />
+        <property role="TrG5h" value="param1" />
         <node concept="13$MfA" id="5B4xbkqmxwA" role="3DZmvg">
           <ref role="13$Mfx" node="5B4xbkqme0O" resolve="java.security.x.CryslTest" />
         </node>
       </node>
       <node concept="3DZmoo" id="5B4xbkqmxwD" role="3DZmuy">
-        <property role="TrG5h" value="asdasd" />
+        <property role="TrG5h" value="param2" />
         <node concept="13$MfA" id="5B4xbkqmxwJ" role="3DZmvg">
           <ref role="13$Mfx" node="5B4xbkqme0O" resolve="java.security.x.CryslTest" />
         </node>
+      </node>
+    </node>
+    <node concept="3DZmo_" id="5B4xbkqnllx" role="3DZmv4">
+      <node concept="3DZmon" id="5B4xbkquAjC" role="3DZmuH">
+        <property role="TrG5h" value="m1" />
+        <property role="13BRcl" value="my" />
+        <node concept="3DZmol" id="5B4xbkquAjF" role="3DZmuP">
+          <node concept="13BPGo" id="5B4xbkquAjE" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwy" resolve="param1" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="5B4xbkquAjI" role="3DZmuP">
+          <node concept="13BPGo" id="5B4xbkquAjO" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwD" resolve="param2" />
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="5B4xbkquAka" role="3DZmuH">
+        <property role="TrG5h" value="m3" />
+        <property role="13BRcl" value="mx" />
+        <node concept="3DZmol" id="5B4xbkquAkj" role="3DZmuP">
+          <node concept="13BPGo" id="5B4xbkquAki" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwy" resolve="param1" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="5B4xbkquAkm" role="3DZmuP">
+          <node concept="13BPGo" id="5B4xbkquAks" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwy" resolve="param1" />
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmvB" id="5B4xbkqv6um" role="3DZmuH">
+        <property role="TrG5h" value="aggre1" />
+        <node concept="13JI61" id="5B4xbkqv_aF" role="3DZmuB">
+          <ref role="13JI60" node="5B4xbkqv_al" resolve="m2" />
+        </node>
+        <node concept="13JI61" id="5B4xbkqv_a0" role="3DZmuB">
+          <ref role="13JI60" node="5B4xbkquAka" resolve="m3" />
+        </node>
+        <node concept="13JI61" id="5B4xbkqvm_M" role="3DZmuB">
+          <ref role="13JI60" node="5B4xbkquAjC" resolve="m1" />
+        </node>
+        <node concept="13JI61" id="5B4xbkqvm_H" role="3DZmuB">
+          <ref role="13JI60" node="5B4xbkquAjC" resolve="m1" />
+        </node>
+      </node>
+      <node concept="3DZmon" id="5B4xbkqv_al" role="3DZmuH">
+        <property role="TrG5h" value="m2" />
+        <property role="13BRcl" value="methodtest" />
       </node>
     </node>
   </node>
@@ -115,6 +189,14 @@
         </node>
       </node>
       <node concept="19Rifw" id="5B4xbkqlUph" role="2C2TGm" />
+      <node concept="19RgSI" id="5B4xbkqmZwn" role="1UOdpc">
+        <property role="TrG5h" value="xx" />
+        <node concept="26Vqpq" id="5B4xbkqmZwm" role="2C2TGm" />
+      </node>
+      <node concept="19RgSI" id="5B4xbkqmZwY" role="1UOdpc">
+        <property role="TrG5h" value="y" />
+        <node concept="2fgwQN" id="5B4xbkqmZwW" role="2C2TGm" />
+      </node>
     </node>
   </node>
   <node concept="N3F5e" id="5B4xbkqmb7k">

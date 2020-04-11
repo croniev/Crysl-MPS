@@ -34,6 +34,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -93,7 +94,6 @@
   <node concept="1TIwiD" id="59uLJIVCU4y">
     <property role="EcuMT" value="5935400143408046370" />
     <property role="TrG5h" value="Object" />
-    <ref role="1TJDcQ" node="59uLJIVCU3E" resolve="SuperType" />
   </node>
   <node concept="1TIwiD" id="59uLJIVCU4x">
     <property role="EcuMT" value="5935400143408046369" />
@@ -129,13 +129,18 @@
   <node concept="1TIwiD" id="59uLJIVCU4s">
     <property role="EcuMT" value="5935400143408046364" />
     <property role="TrG5h" value="Aggregate" />
-    <ref role="1TJDcQ" node="59uLJIVCU3E" resolve="SuperType" />
     <node concept="1TJgyj" id="59uLJIVCU5s" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046428" />
-      <property role="20kJfa" value="lab" />
+      <property role="20kJfa" value="methodList" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU3D" resolve="Event" />
+      <ref role="20lvS9" node="5B4xbkquAkO" resolve="MethodReference" />
+    </node>
+    <node concept="PrWs8" id="5B4xbkqu$LW" role="PzmwI">
+      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="SuperType" />
+    </node>
+    <node concept="PrWs8" id="5B4xbkquAkK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU4q">
@@ -318,7 +323,7 @@
     <node concept="1TJgyj" id="59uLJIVCU57" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046407" />
       <property role="20kJfa" value="value" />
-      <ref role="20lvS9" node="59uLJIVCU3E" resolve="SuperType" />
+      <ref role="20lvS9" node="5B4xbkqu$yF" resolve="SuperType" />
     </node>
     <node concept="1TJgyj" id="59uLJIVCU58" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046408" />
@@ -455,7 +460,7 @@
     <node concept="1TJgyj" id="59uLJIVCU4D" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046377" />
       <property role="20kJfa" value="labelCond" />
-      <ref role="20lvS9" node="59uLJIVCU3E" resolve="SuperType" />
+      <ref role="20lvS9" node="5B4xbkqu$yF" resolve="SuperType" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3J">
@@ -494,57 +499,35 @@
   <node concept="1TIwiD" id="59uLJIVCU3I">
     <property role="EcuMT" value="5935400143408046318" />
     <property role="TrG5h" value="Par" />
-    <node concept="1TJgyj" id="59uLJIVCU4z" role="1TKVEi">
-      <property role="IQ2ns" value="5935400143408046371" />
-      <property role="20kJfa" value="val" />
-      <ref role="20lvS9" node="59uLJIVCU4y" resolve="Object" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="59uLJIVCU3H">
-    <property role="EcuMT" value="5935400143408046317" />
-    <property role="TrG5h" value="ParList" />
-    <node concept="1TJgyj" id="59uLJIVCU4S" role="1TKVEi">
-      <property role="IQ2ns" value="5935400143408046392" />
-      <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+    <node concept="1TJgyj" id="5B4xbkqmZus" role="1TKVEi">
+      <property role="IQ2ns" value="6468440878177056668" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU3I" resolve="Par" />
+      <property role="20kJfa" value="obj" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5B4xbkqmXYH" resolve="ObjectRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3G">
     <property role="EcuMT" value="5935400143408046316" />
     <property role="TrG5h" value="Method" />
-    <node concept="1TJgyj" id="59uLJIVCU5c" role="1TKVEi">
-      <property role="IQ2ns" value="5935400143408046412" />
-      <property role="20kJfa" value="leftSide" />
-      <ref role="20lvS9" node="59uLJIVCU4y" resolve="Object" />
-    </node>
-    <node concept="1TJgyj" id="59uLJIVCU5d" role="1TKVEi">
-      <property role="IQ2ns" value="5935400143408046413" />
-      <property role="20kJfa" value="methName" />
-      <ref role="20lvS9" node="59uLJIVCU4y" resolve="Object" />
-    </node>
+    <property role="34LRSv" value="method" />
     <node concept="1TJgyj" id="59uLJIVCU5e" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046414" />
       <property role="20kJfa" value="parList" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU3H" resolve="ParList" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="59uLJIVCU3I" resolve="Par" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="59uLJIVCU3E">
-    <property role="EcuMT" value="5935400143408046314" />
-    <property role="TrG5h" value="SuperType" />
-    <ref role="1TJDcQ" node="59uLJIVCU3D" resolve="Event" />
-    <node concept="1TJgyi" id="59uLJIVCU3F" role="1TKVEl">
-      <property role="IQ2nx" value="5935400143408046315" />
-      <property role="TrG5h" value="name" />
+    <node concept="PrWs8" id="5B4xbkqmZuu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5B4xbkqu$yJ" role="PzmwI">
+      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="SuperType" />
+    </node>
+    <node concept="1TJgyi" id="5B4xbkqmZuw" role="1TKVEl">
+      <property role="IQ2nx" value="6468440878177056672" />
+      <property role="TrG5h" value="methodName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="59uLJIVCU5f" role="1TKVEi">
-      <property role="IQ2ns" value="5935400143408046415" />
-      <property role="20kJfa" value="meth" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU3G" resolve="Method" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3D">
@@ -646,7 +629,7 @@
       <property role="20kJfa" value="req_event" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU3D" resolve="Event" />
+      <ref role="20lvS9" node="5B4xbkqu$yF" resolve="SuperType" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3t">
@@ -754,6 +737,31 @@
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="59uLJIVCU4c" resolve="JvmType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5B4xbkqmXYH">
+    <property role="EcuMT" value="6468440878177050541" />
+    <property role="TrG5h" value="ObjectRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5B4xbkqmXYI" role="1TKVEi">
+      <property role="IQ2ns" value="6468440878177050542" />
+      <property role="20kJfa" value="obj" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="59uLJIVCU3z" resolve="ObjectDecl" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5B4xbkqu$yF">
+    <property role="TrG5h" value="SuperType" />
+    <property role="EcuMT" value="5935400143408046314" />
+  </node>
+  <node concept="1TIwiD" id="5B4xbkquAkO">
+    <property role="EcuMT" value="6468440878179050804" />
+    <property role="TrG5h" value="MethodReference" />
+    <node concept="1TJgyj" id="5B4xbkquAkP" role="1TKVEi">
+      <property role="IQ2ns" value="6468440878179050805" />
+      <property role="20kJfa" value="method" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="59uLJIVCU3G" resolve="Method" />
     </node>
   </node>
 </model>
