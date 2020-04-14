@@ -36,13 +36,22 @@
         <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
+      <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
+        <property id="1317894735999272944" name="exported" index="2OOxQR" />
+      </concept>
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+      <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
+        <property id="6708182213627045681" name="extern" index="3mNisv" />
+      </concept>
     </language>
     <language id="8e9fbf67-e9d6-4aec-bf8d-e721059602cb" name="CryslMPS">
+      <concept id="469410765356196236" name="CryslMPS.structure.AggregateRef" flags="ng" index="2$jOWm">
+        <reference id="469410765356196237" name="aggre" index="2$jOWn" />
+      </concept>
       <concept id="6468440878176773971" name="CryslMPS.structure.JVMTypeRef" flags="ng" index="13$MfA">
         <reference id="6468440878176773972" name="type" index="13$Mfx" />
       </concept>
@@ -51,6 +60,13 @@
       </concept>
       <concept id="6468440878179050804" name="CryslMPS.structure.MethodReference" flags="ng" index="13JI61">
         <reference id="6468440878179050805" name="method" index="13JI60" />
+      </concept>
+      <concept id="7470056848698726873" name="CryslMPS.structure.AggregateStateList" flags="ng" index="1h0U3T">
+        <child id="7470056848699322553" name="aggregateState" index="1h68Ap" />
+      </concept>
+      <concept id="7470056848699319394" name="CryslMPS.structure.AggregateState" flags="ng" index="1h69P2">
+        <property id="7470056848699319455" name="isMultiple" index="1h69QZ" />
+        <child id="7470056848699319460" name="aggregateRef" index="1h69Q4" />
       </concept>
       <concept id="5935400143408046318" name="CryslMPS.structure.Par" flags="ng" index="3DZmol">
         <child id="6468440878177056668" name="obj" index="13BRcD" />
@@ -65,6 +81,7 @@
       <concept id="5935400143408046298" name="CryslMPS.structure.Domainmodel" flags="ng" index="3DZmox">
         <child id="6468440878176779137" name="javaType" index="13$NWO" />
         <child id="5935400143408046401" name="reqConstraints" index="3DZmuU" />
+        <child id="5935400143408046400" name="order" index="3DZmuV" />
         <child id="5935400143408046399" name="req_events" index="3DZmv4" />
         <child id="5935400143408046397" name="usage" index="3DZmv6" />
       </concept>
@@ -186,11 +203,27 @@
       </node>
     </node>
     <node concept="3DZmo$" id="q3FDEyH1R$" role="3DZmuU" />
+    <node concept="1h0U3T" id="6uEYi0QH8Tq" role="3DZmuV">
+      <node concept="1h69P2" id="6uEYi0QH8Ts" role="1h68Ap">
+        <property role="1h69QZ" value="true" />
+        <node concept="2$jOWm" id="6uEYi0QI7ux" role="1h69Q4">
+          <ref role="2$jOWn" node="5B4xbkqv6um" resolve="aggre1" />
+        </node>
+      </node>
+      <node concept="1h69P2" id="6uEYi0QHCpB" role="1h68Ap">
+        <node concept="2$jOWm" id="6uEYi0QHCpC" role="1h69Q4" />
+      </node>
+      <node concept="1h69P2" id="6uEYi0QH8Tw" role="1h68Ap">
+        <node concept="2$jOWm" id="6uEYi0QH8Tx" role="1h69Q4" />
+      </node>
+    </node>
   </node>
   <node concept="N3F5e" id="5B4xbkqlUpb">
     <property role="TrG5h" value="module1" />
     <node concept="N3Fnx" id="5B4xbkqlUqm" role="N3F5h">
       <property role="TrG5h" value="fn" />
+      <property role="2OOxQR" value="false" />
+      <property role="3mNisv" value="true" />
       <node concept="3XIRFW" id="5B4xbkqlUqo" role="3XIRFX">
         <node concept="3XIRlf" id="5B4xbkqlUqQ" role="3XIRFZ">
           <property role="TrG5h" value="x" />
@@ -229,13 +262,6 @@
   </node>
   <node concept="3DZmvR" id="5B4xbkqme0O">
     <property role="TrG5h" value="java.security.x.CryslTest" />
-  </node>
-  <node concept="3DZmox" id="5B4xbkqv_cx">
-    <node concept="13$MfA" id="5B4xbkqv_cz" role="13$NWO">
-      <ref role="13$Mfx" node="5B4xbkqme0O" resolve="java.security.x.CryslTest" />
-    </node>
-    <node concept="3DZmoB" id="5B4xbkqv_cA" role="3DZmv6" />
-    <node concept="3DZmo_" id="5B4xbkqv_cC" role="3DZmv4" />
   </node>
 </model>
 
