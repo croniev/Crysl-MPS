@@ -64,9 +64,11 @@
       </concept>
       <concept id="5935400143408046298" name="CryslMPS.structure.Domainmodel" flags="ng" index="3DZmox">
         <child id="6468440878176779137" name="javaType" index="13$NWO" />
+        <child id="5935400143408046401" name="reqConstraints" index="3DZmuU" />
         <child id="5935400143408046399" name="req_events" index="3DZmv4" />
         <child id="5935400143408046397" name="usage" index="3DZmv6" />
       </concept>
+      <concept id="5935400143408046303" name="CryslMPS.structure.EnforceConsBlock" flags="ng" index="3DZmo$" />
       <concept id="5935400143408046302" name="CryslMPS.structure.RequiredBlock" flags="ng" index="3DZmo_">
         <child id="5935400143408046422" name="req_event" index="3DZmuH" />
       </concept>
@@ -165,8 +167,25 @@
       <node concept="3DZmon" id="5B4xbkqv_al" role="3DZmuH">
         <property role="TrG5h" value="m2" />
         <property role="13BRcl" value="methodtest" />
+        <node concept="3DZmol" id="q3FDEyG6uN" role="3DZmuP">
+          <node concept="13BPGo" id="q3FDEyG9$P" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwD" resolve="param2" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="q3FDEyG9$S" role="3DZmuP">
+          <node concept="13BPGo" id="q3FDEyG9$Y" role="13BRcD">
+            <ref role="13BPGr" node="5B4xbkqmxwy" resolve="param1" />
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmvB" id="q3FDEyG9Hc" role="3DZmuH">
+        <property role="TrG5h" value="aggre2" />
+        <node concept="13JI61" id="q3FDEyG9Hz" role="3DZmuB">
+          <ref role="13JI60" node="5B4xbkquAjC" resolve="m1" />
+        </node>
       </node>
     </node>
+    <node concept="3DZmo$" id="q3FDEyH1R$" role="3DZmuU" />
   </node>
   <node concept="N3F5e" id="5B4xbkqlUpb">
     <property role="TrG5h" value="module1" />
@@ -210,6 +229,13 @@
   </node>
   <node concept="3DZmvR" id="5B4xbkqme0O">
     <property role="TrG5h" value="java.security.x.CryslTest" />
+  </node>
+  <node concept="3DZmox" id="5B4xbkqv_cx">
+    <node concept="13$MfA" id="5B4xbkqv_cz" role="13$NWO">
+      <ref role="13$Mfx" node="5B4xbkqme0O" resolve="java.security.x.CryslTest" />
+    </node>
+    <node concept="3DZmoB" id="5B4xbkqv_cA" role="3DZmv6" />
+    <node concept="3DZmo_" id="5B4xbkqv_cC" role="3DZmv4" />
   </node>
 </model>
 
