@@ -685,15 +685,11 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="59uLJIVCU3y" resolve="DestroysBlock" />
     </node>
-    <node concept="1TJgyj" id="5B4xbkqlVI1" role="1TKVEi">
-      <property role="IQ2ns" value="6468440878176779137" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="javaType" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5B4xbkqlUtj" resolve="JVMTypeRef" />
-    </node>
     <node concept="1QGGSu" id="59uLJIVDg5w" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/Webp.net-resizeimage (1).jpg" />
+    </node>
+    <node concept="PrWs8" id="P_V$Z6ZdUa" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="5B4xbkqlUtj">

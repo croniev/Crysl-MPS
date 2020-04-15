@@ -281,8 +281,8 @@
               <property role="Vb096" value="fLwANPu/blue" />
             </node>
           </node>
-          <node concept="3F1sOY" id="5B4xbkqlVId" role="3EZMnx">
-            <ref role="1NtTu8" to="ouo3:5B4xbkqlVI1" resolve="javaType" />
+          <node concept="3F0A7n" id="P_V$Z6Zjrp" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
         <node concept="3F0ifn" id="5B4xbkqmsZI" role="3EZMnx" />
