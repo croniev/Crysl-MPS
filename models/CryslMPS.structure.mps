@@ -8,10 +8,8 @@
   </languages>
   <imports>
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="clqz" ref="r:5ebcdb77-81e9-4964-beae-35bd9a2f28b5(com.mbeddr.ext.statemachines.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
   </imports>
@@ -666,7 +664,7 @@
       <property role="IQ2ns" value="5935400143408046400" />
       <property role="20kJfa" value="order" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="6uEYi0QElBp" resolve="AggregateStateList" />
+      <ref role="20lvS9" node="6uEYi0QElBo" resolve="OrderExpression" />
     </node>
     <node concept="1TJgyj" id="59uLJIVCU51" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046401" />
@@ -825,6 +823,13 @@
     <property role="EcuMT" value="7470056848698726872" />
     <property role="TrG5h" value="OrderExpression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1AkXiYOJH02" role="1TKVEi">
+      <property role="IQ2ns" value="1843367732746047490" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="aggregateList" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6uEYi0QElBp" resolve="AggregateStateList" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6uEYi0QElBp">
     <property role="EcuMT" value="7470056848698726873" />
