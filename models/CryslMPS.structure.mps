@@ -278,7 +278,7 @@
     <node concept="1QGGSu" id="59uLJIVDg5w" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/Webp.net-resizeimage (1).jpg" />
     </node>
-    <node concept="PrWs8" id="P_V$Z6ZdUa" role="PzmwI">
+    <node concept="PrWs8" id="7AolW1Y1C8g" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -512,6 +512,52 @@
     <node concept="PrWs8" id="bDjsV_0kV$" role="PzmwI">
       <ref role="PrY4T" node="1AkXiYOQH3W" resolve="ICryslDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7AolW1XXD9p">
+    <property role="EcuMT" value="8761849559307948633" />
+    <property role="TrG5h" value="CryslTemplateExpression" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="7AolW1XXD9q" role="1TKVEi">
+      <property role="IQ2ns" value="8761849559307948634" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="includeClass" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="7AolW1XXD9s" role="1TKVEi">
+      <property role="IQ2ns" value="8761849559307948636" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="includeParameter" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7AolW1XXD9v" resolve="IncludeParameter" />
+    </node>
+    <node concept="PrWs8" id="7AolW1Yaalz" role="PzmwI">
+      <ref role="PrY4T" to="tpee:1wHCnsn58oY" resolve="IBinaryLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7AolW1XXD9v">
+    <property role="EcuMT" value="8761849559307948639" />
+    <property role="TrG5h" value="IncludeParameter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7AolW1XXD9w" role="1TKVEi">
+      <property role="IQ2ns" value="8761849559307948640" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="paramString" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="7AolW1XXDa3" role="1TKVEi">
+      <property role="IQ2ns" value="8761849559307948675" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="paramRef" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5B4xbkqmXYH" resolve="ObjectRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7AolW1XYiNy">
+    <property role="EcuMT" value="8761849559308119266" />
+    <property role="TrG5h" value="CryslParameterExprStatement" />
+    <ref role="1TJDcQ" to="tpee:fzclF8j" resolve="ExpressionStatement" />
   </node>
 </model>
 
