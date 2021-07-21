@@ -1,0 +1,12 @@
+/.idea
+/classes_gen
+/source_gen
+/source_gen.caches
+
+/generator/classes_gen
+/generator/source_gen
+/generator/source_gen.caches
+
+/sandbox/classes_gen
+/sandbox/source_gen
+/sandbox/source_gen.caches
