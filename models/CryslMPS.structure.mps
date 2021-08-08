@@ -27,7 +27,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -71,11 +73,8 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="5B4xbkquAkO" resolve="MethodReference" />
     </node>
-    <node concept="PrWs8" id="5B4xbkqu$LW" role="PzmwI">
-      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="IEvent" />
-    </node>
-    <node concept="PrWs8" id="3R41AcHxkzZ" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    <node concept="PrWs8" id="1sUn0HP4_nn" role="PzmwI">
+      <ref role="PrY4T" node="1sUn0HP4rKF" resolve="INamedEvent" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU4m">
@@ -136,17 +135,14 @@
     <property role="34LRSv" value="&lt;name&gt;: &lt;method&gt;(&lt;&lt; args &gt;&gt;)" />
     <property role="3GE5qa" value="blocks.events" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5B4xbkqu$yJ" role="PzmwI">
-      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="IEvent" />
-    </node>
-    <node concept="PrWs8" id="3R41AcHxkzO" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
-    </node>
     <node concept="1TJgyj" id="3R41AcHyZjK" role="1TKVEi">
       <property role="IQ2ns" value="4450689354784568560" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="methodCall" />
       <ref role="20lvS9" node="3R41AcHyUqf" resolve="MethodCall" />
+    </node>
+    <node concept="PrWs8" id="1sUn0HP4_nt" role="PzmwI">
+      <ref role="PrY4T" node="1sUn0HP4rKF" resolve="INamedEvent" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3D">
@@ -539,12 +535,6 @@
     <property role="TrG5h" value="MethodWithReturn" />
     <property role="34LRSv" value="&lt;name&gt;: &lt;var&gt; = &lt;method&gt;(&lt;&lt; args &gt;&gt;)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3R41AcH_ozf" role="PzmwI">
-      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="IEvent" />
-    </node>
-    <node concept="PrWs8" id="3R41AcH_ozk" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
-    </node>
     <node concept="1TJgyj" id="3R41AcH_oI6" role="1TKVEi">
       <property role="IQ2ns" value="4450689354785196934" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -557,6 +547,9 @@
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3R41AcH_oIb" resolve="VariableReference" />
+    </node>
+    <node concept="PrWs8" id="1sUn0HP4_nq" role="PzmwI">
+      <ref role="PrY4T" node="1sUn0HP4rKF" resolve="INamedEvent" />
     </node>
   </node>
   <node concept="1TIwiD" id="3R41AcH_oIb">
@@ -606,11 +599,39 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="1sUn0HP4rKO" role="1TKVEi">
+      <property role="IQ2ns" value="1673751415800052788" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="replacement" />
+      <ref role="20lvS9" node="1sUn0HP4rKI" resolve="INamedEventReference" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3R41AcHBPnF">
     <property role="EcuMT" value="4450689354785838571" />
     <property role="3GE5qa" value="blocks.forbidden" />
     <property role="TrG5h" value="IForbidden" />
+  </node>
+  <node concept="PlHQZ" id="1sUn0HP4rKF">
+    <property role="TrG5h" value="INamedEvent" />
+    <property role="3GE5qa" value="blocks.events" />
+    <property role="EcuMT" value="1673751415799706597" />
+    <node concept="PrWs8" id="1sUn0HP37fA" role="PrDN$">
+      <ref role="PrY4T" node="5B4xbkqu$yF" resolve="IEvent" />
+    </node>
+    <node concept="PrWs8" id="1sUn0HP37fF" role="PrDN$">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1sUn0HP4rKI">
+    <property role="EcuMT" value="1673751415800052782" />
+    <property role="TrG5h" value="INamedEventReference" />
+    <property role="3GE5qa" value="blocks.events" />
+    <node concept="1TJgyj" id="1sUn0HP4rKJ" role="1TKVEi">
+      <property role="20lbJX" value="fLJekj4/1" />
+      <property role="IQ2ns" value="1673751415800052783" />
+      <property role="20kJfa" value="iNamedEvent" />
+      <ref role="20lvS9" node="1sUn0HP4rKF" resolve="INamedEvent" />
+    </node>
   </node>
 </model>
 

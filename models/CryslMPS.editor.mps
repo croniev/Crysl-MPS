@@ -76,6 +76,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
@@ -174,6 +175,9 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
@@ -1486,6 +1490,35 @@
       <node concept="3F0ifn" id="3R41AcHEby1" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <ref role="1k5W1q" to="tpen:hFCSUmN" resolve="RightParen" />
+      </node>
+      <node concept="_tjkj" id="1sUn0HP37f2" role="3EZMnx">
+        <node concept="3EZMnI" id="1sUn0HP37fi" role="_tjki">
+          <node concept="3F0ifn" id="1sUn0HP7ddD" role="3EZMnx">
+            <property role="3F0ifm" value="=&gt;" />
+          </node>
+          <node concept="3F1sOY" id="1sUn0HP6fYn" role="3EZMnx">
+            <ref role="1NtTu8" to="ouo3:1sUn0HP4rKO" resolve="replacement" />
+          </node>
+          <node concept="2iRfu4" id="1sUn0HP3jsK" role="2iSdaV" />
+          <node concept="VPM3Z" id="1sUn0HP37fm" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1sUn0HP7de3" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="tpen:hFDgi_W" resolve="Semicolon" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1sUn0HP4rKK">
+    <property role="3GE5qa" value="blocks.events" />
+    <ref role="1XX52x" to="ouo3:1sUn0HP4rKI" resolve="INamedEventReference" />
+    <node concept="1iCGBv" id="1sUn0HP4rKL" role="2wV5jI">
+      <ref role="1NtTu8" to="ouo3:1sUn0HP4rKJ" resolve="iNamedEvent" />
+      <node concept="1sVBvm" id="1sUn0HP4rKM" role="1sWHZn">
+        <node concept="3F0A7n" id="1sUn0HP4rKN" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
     </node>
   </node>

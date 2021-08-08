@@ -231,5 +231,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1sUn0HP7d7Y">
+    <property role="3GE5qa" value="blocks.events" />
+    <ref role="1M2myG" to="ouo3:1sUn0HP4rKI" resolve="INamedEventReference" />
+    <node concept="1N5Pfh" id="1sUn0HP7d7Z" role="1Mr941">
+      <ref role="1N5Vy1" to="ouo3:1sUn0HP4rKJ" resolve="iNamedEvent" />
+      <node concept="1dDu$B" id="1sUn0HP7dah" role="1N6uqs">
+        <ref role="1dDu$A" to="ouo3:59uLJIVCU3q" resolve="Specification" />
+      </node>
+    </node>
+  </node>
 </model>
 
