@@ -973,7 +973,7 @@
   </node>
   <node concept="1YbPZF" id="2OAqJPDXerw">
     <property role="TrG5h" value="typeof_StringLiteral" />
-    <property role="3GE5qa" value="blocks.constraints.lit" />
+    <property role="3GE5qa" value="blocks.constraints.literal" />
     <node concept="3clFbS" id="2OAqJPDXerx" role="18ibNy">
       <node concept="1Z5TYs" id="2OAqJPDXe$E" role="3cqZAp">
         <node concept="mw_s8" id="2OAqJPDXe$Y" role="1ZfhKB">
@@ -1004,7 +1004,7 @@
   </node>
   <node concept="1YbPZF" id="2OAqJPDXf1A">
     <property role="TrG5h" value="typeof_IntLiteral" />
-    <property role="3GE5qa" value="blocks.constraints.lit" />
+    <property role="3GE5qa" value="blocks.constraints.literal" />
     <node concept="3clFbS" id="2OAqJPDXf1B" role="18ibNy">
       <node concept="1Z5TYs" id="2OAqJPDXfaL" role="3cqZAp">
         <node concept="mw_s8" id="2OAqJPDXfaO" role="1ZfhK$">
@@ -1028,7 +1028,7 @@
   </node>
   <node concept="1YbPZF" id="2OAqJPDZK_o">
     <property role="TrG5h" value="typeof_BooleanLiteral" />
-    <property role="3GE5qa" value="blocks.constraints.lit" />
+    <property role="3GE5qa" value="blocks.constraints.literal" />
     <node concept="3clFbS" id="2OAqJPDZK_p" role="18ibNy">
       <node concept="1Z5TYs" id="2OAqJPDZKIz" role="3cqZAp">
         <node concept="mw_s8" id="2Ymbt0A$xFU" role="1ZfhKB">
