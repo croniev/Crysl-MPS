@@ -135,7 +135,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59uLJIVCU4U" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046394" />
-      <property role="20kJfa" value="pred" />
+      <property role="20kJfa" value="predicates" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3RHdA3Drrcp" resolve="EnsuresPredicate" />
@@ -149,7 +149,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59uLJIVCU4Q" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046390" />
-      <property role="20kJfa" value="pred" />
+      <property role="20kJfa" value="predicates" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3RHdA3Drrci" resolve="RequiresPredicate" />
