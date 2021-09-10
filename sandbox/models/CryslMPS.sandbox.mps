@@ -13,6 +13,7 @@
     <import index="pfyx" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.crypto(JDK/)" />
     <import index="zfbc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="7lc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.crypto.spec(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -21,6 +22,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534555686" name="jetbrains.mps.baseLanguage.structure.CharType" flags="in" index="10Pfzv" />
       <concept id="1070534604311" name="jetbrains.mps.baseLanguage.structure.ByteType" flags="in" index="10PrrI" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
@@ -84,6 +86,14 @@
       <concept id="1843367732747883675" name="CryslMPS.structure.VariableDeclaration" flags="ng" index="2Hjy6O">
         <child id="1843367732748081277" name="type" index="2HiiPi" />
       </concept>
+      <concept id="2903111003439547067" name="CryslMPS.structure.NegatesPredicate" flags="ng" index="2JKMUC">
+        <reference id="2903111003439547071" name="negates" index="2JKMUG" />
+        <child id="2903111003439547070" name="after" index="2JKMUH" />
+        <child id="2903111003439547069" name="args" index="2JKMUI" />
+      </concept>
+      <concept id="2903111003439547066" name="CryslMPS.structure.NegatesBlock" flags="ng" index="2JKMUD">
+        <child id="2903111003440614367" name="negated" index="2JOIvc" />
+      </concept>
       <concept id="6468440878179050804" name="CryslMPS.structure.EventReference" flags="ng" index="13JI61">
         <reference id="6468440878179050805" name="method" index="13JI60" />
       </concept>
@@ -95,6 +105,15 @@
       <concept id="7470056848698726872" name="CryslMPS.structure.OrderBlock" flags="ng" index="1h0U3S">
         <child id="1843367732746047490" name="order" index="2HaykH" />
       </concept>
+      <concept id="4462282595655070482" name="CryslMPS.structure.RequiresPredicate" flags="ng" index="3kw8lM">
+        <reference id="4462282595655070622" name="required" index="3kw8nY" />
+        <child id="4462282595655070487" name="args" index="3kw8lR" />
+      </concept>
+      <concept id="4462282595655070489" name="CryslMPS.structure.EnsuresPredicate" flags="ng" index="3kw8lT">
+        <child id="4462282595655070496" name="args" index="3kw8l0" />
+        <child id="4462282595656149554" name="after" index="3k$LLi" />
+      </concept>
+      <concept id="4462282595655072533" name="CryslMPS.structure.ThisArgument" flags="ng" index="3kw8PP" />
       <concept id="1673751415802447795" name="CryslMPS.structure.OneOrMore" flags="ng" index="1y31IS" />
       <concept id="1673751415802447794" name="CryslMPS.structure.ZeroOrMore" flags="ng" index="1y31IT" />
       <concept id="1673751415802447793" name="CryslMPS.structure.Optional" flags="ng" index="1y31IU" />
@@ -125,8 +144,15 @@
       <concept id="1673751415812182576" name="CryslMPS.structure.NoCallToPredicate" flags="ng" index="1yW8SV">
         <reference id="1673751415812182577" name="event" index="1yW8SU" />
       </concept>
+      <concept id="1673751415812182883" name="CryslMPS.structure.NotHardCodedPredicate" flags="ng" index="1yW8XC">
+        <child id="1673751415812182884" name="obj" index="1yW8XJ" />
+      </concept>
       <concept id="1673751415812182968" name="CryslMPS.structure.LengthPredicate" flags="ng" index="1yW8YN">
         <child id="1673751415812182969" name="obj" index="1yW8YM" />
+      </concept>
+      <concept id="1673751415812168917" name="CryslMPS.structure.NeverTypeofPredicate" flags="ng" index="1yWc3u">
+        <child id="1673751415812168920" name="obj" index="1yWc3j" />
+        <child id="1673751415812168926" name="type" index="1yWc3l" />
       </concept>
       <concept id="5935400143408046318" name="CryslMPS.structure.Parameter" flags="ng" index="3DZmol">
         <child id="4450689354785205660" name="variable" index="gkqJZ" />
@@ -134,11 +160,18 @@
       <concept id="5935400143408046316" name="CryslMPS.structure.Method" flags="ng" index="3DZmon">
         <child id="4450689354784568560" name="methodCall" index="gjZaj" />
       </concept>
-      <concept id="5935400143408046305" name="CryslMPS.structure.EnsuresBlock" flags="ng" index="3DZmoq" />
+      <concept id="5935400143408046305" name="CryslMPS.structure.EnsuresBlock" flags="ng" index="3DZmoq">
+        <child id="5935400143408046394" name="pred" index="3DZmv1" />
+      </concept>
+      <concept id="5935400143408046304" name="CryslMPS.structure.RequiresBlock" flags="ng" index="3DZmor">
+        <child id="5935400143408046390" name="pred" index="3DZmvd" />
+      </concept>
       <concept id="5935400143408046298" name="CryslMPS.structure.Specification" flags="ng" index="3DZmox">
         <child id="4450689354785584907" name="forbidden" index="gnR5C" />
+        <child id="2903111003440107219" name="negates" index="2JQEb0" />
         <child id="6632290329190097138" name="forType" index="1yEc0o" />
-        <child id="5935400143408046403" name="ensure" index="3DZmuS" />
+        <child id="5935400143408046403" name="ensures" index="3DZmuS" />
+        <child id="5935400143408046402" name="requires" index="3DZmuT" />
         <child id="5935400143408046401" name="constraints" index="3DZmuU" />
         <child id="5935400143408046400" name="order" index="3DZmuV" />
         <child id="5935400143408046399" name="events" index="3DZmv4" />
@@ -1778,7 +1811,7 @@
           </node>
         </node>
       </node>
-      <node concept="20kzeY" id="2Ymbt0AECj7" role="3DZmuY" />
+      <node concept="20kzeY" id="7p8eQbqnE1L" role="3DZmuY" />
       <node concept="2CQV6U" id="2Ymbt0AF6DW" role="3DZmuY">
         <node concept="2$ezVI" id="2Ymbt0AF6Je" role="2CQV6T">
           <node concept="1yW8SV" id="2Ymbt0AF6OD" role="1ysuBB">
@@ -1890,6 +1923,475 @@
               <ref role="gkoRJ" node="6dORzJbLjyU" resolve="cipherText" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmor" id="3RHdA3DtJul" role="3DZmuT">
+      <node concept="3kw8lM" id="3RHdA3DCCAU" role="3DZmvd">
+        <ref role="3kw8nY" node="3RHdA3D_1P8" resolve="generatedKey" />
+        <node concept="3DZmol" id="3RHdA3DCCB0" role="3kw8lR">
+          <node concept="gkoRC" id="3RHdA3DCCAY" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbHPPI" resolve="key" />
+          </node>
+        </node>
+        <node concept="2CTIw1" id="3RHdA3DCFzI" role="3kw8lR">
+          <node concept="gkoRC" id="3RHdA3DCFzK" role="2CTJpd">
+            <ref role="gkoRJ" node="6dORzJbHPPm" resolve="transformation" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmoq" id="3RHdA3DtJun" role="3DZmuS">
+      <node concept="3kw8lT" id="3RHdA3Dvy4_" role="3DZmv1">
+        <property role="TrG5h" value="generatedCipher" />
+        <node concept="3kw8PP" id="3RHdA3DvyCF" role="3kw8l0" />
+        <node concept="1yaY0_" id="3RHdA3DxorE" role="3k$LLi">
+          <ref role="1yaY0$" node="6dORzJbSAB0" resolve="Inits" />
+        </node>
+      </node>
+      <node concept="3kw8lT" id="3RHdA3DxorG" role="3DZmv1">
+        <property role="TrG5h" value="encrypted" />
+        <node concept="3DZmol" id="3RHdA3D_1iY" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1iW" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLhF0" resolve="pre_ciphertext" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="3RHdA3D_1jc" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1ja" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLhDn" resolve="pre_plaintext" />
+          </node>
+        </node>
+        <node concept="1yaY0_" id="3RHdA3D_1jo" role="3k$LLi">
+          <ref role="1yaY0$" node="6dORzJbUUsh" resolve="Updates" />
+        </node>
+      </node>
+      <node concept="3kw8lT" id="3RHdA3D_1jq" role="3DZmv1">
+        <property role="TrG5h" value="encrypted" />
+        <node concept="3DZmol" id="3RHdA3D_1jD" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1jB" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLjyU" resolve="cipherText" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="3RHdA3D_1jR" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1jP" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLjxa" resolve="plainText" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kw8lT" id="3RHdA3D_1kb" role="3DZmv1">
+        <property role="TrG5h" value="encrypted" />
+        <node concept="3DZmol" id="3RHdA3D_1kv" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1kt" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLjIn" resolve="cipher_bytebuffer" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="3RHdA3D_1kE" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1kC" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLjG$" resolve="plain_bytebuffer" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kw8lT" id="3RHdA3D_1kL" role="3DZmv1">
+        <property role="TrG5h" value="wrappedKey" />
+        <node concept="3DZmol" id="3RHdA3D_1la" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1l8" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLj$P" resolve="wrappedKeyBytes" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="3RHdA3D_1lo" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1lm" role="gkqJZ">
+            <ref role="gkoRJ" node="6dORzJbLjTD" resolve="wrappedKey" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3DZmox" id="3RHdA3D_1lv">
+    <property role="TrG5h" value="KeyGenerator" />
+    <node concept="3uibUv" id="3RHdA3D_1lw" role="1yEc0o">
+      <ref role="3uigEE" to="pfyx:~KeyGenerator" resolve="KeyGenerator" />
+    </node>
+    <node concept="3DZmoB" id="3RHdA3D_1lx" role="3DZmv6">
+      <node concept="2Hjy6O" id="3RHdA3D_1lA" role="3DZmuy">
+        <property role="TrG5h" value="secretKeySize" />
+        <node concept="10Oyi0" id="3RHdA3D_1l_" role="2HiiPi" />
+      </node>
+      <node concept="2Hjy6O" id="3RHdA3D_1lR" role="3DZmuy">
+        <property role="TrG5h" value="params" />
+        <node concept="3uibUv" id="3RHdA3D_1lP" role="2HiiPi">
+          <ref role="3uigEE" to="41y5:~AlgorithmParameterSpec" resolve="AlgorithmParameterSpec" />
+        </node>
+      </node>
+      <node concept="2Hjy6O" id="3RHdA3D_1m8" role="3DZmuy">
+        <property role="TrG5h" value="key" />
+        <node concept="3uibUv" id="3RHdA3D_1m6" role="2HiiPi">
+          <ref role="3uigEE" to="pfyx:~SecretKey" resolve="SecretKey" />
+        </node>
+      </node>
+      <node concept="2Hjy6O" id="3RHdA3D_1mt" role="3DZmuy">
+        <property role="TrG5h" value="secretKeyAlgorithm" />
+        <node concept="17QB3L" id="3RHdA3D_1mr" role="2HiiPi" />
+      </node>
+      <node concept="2Hjy6O" id="3RHdA3D_1n0" role="3DZmuy">
+        <property role="TrG5h" value="ranGen" />
+        <node concept="3uibUv" id="3RHdA3D_1mY" role="2HiiPi">
+          <ref role="3uigEE" to="jgjw:~SecureRandom" resolve="SecureRandom" />
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmo_" id="3RHdA3D_1ly" role="3DZmv4">
+      <node concept="3DZmon" id="3RHdA3D_1nK" role="3DZmuH">
+        <property role="TrG5h" value="g1" />
+        <node concept="gjU3G" id="3RHdA3D_1nL" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.getInstance(java.lang.String)" resolve="getInstance" />
+          <node concept="3DZmol" id="3RHdA3D_1nW" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1nU" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1mt" resolve="secretKeyAlgorithm" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="3RHdA3D_1oW" role="3DZmuH">
+        <property role="TrG5h" value="g2" />
+        <node concept="gjU3G" id="3RHdA3D_1oX" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.getInstance(java.lang.String,java.security.Provider)" resolve="getInstance" />
+          <node concept="3DZmol" id="3RHdA3D_1p8" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1p6" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1mt" resolve="secretKeyAlgorithm" />
+            </node>
+          </node>
+          <node concept="23FbgT" id="3RHdA3D_1po" role="gjVns" />
+        </node>
+      </node>
+      <node concept="3DZmvB" id="3RHdA3D_1qD" role="3DZmuH">
+        <property role="TrG5h" value="Gets" />
+        <node concept="13JI61" id="3RHdA3D_1qE" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1nK" resolve="g1" />
+        </node>
+        <node concept="13JI61" id="3RHdA3D_1qQ" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1oW" resolve="g2" />
+        </node>
+      </node>
+      <node concept="20kzeY" id="3RHdA3D_1qT" role="3DZmuH" />
+      <node concept="3DZmon" id="3RHdA3D_1rX" role="3DZmuH">
+        <property role="TrG5h" value="i1" />
+        <node concept="gjU3G" id="3RHdA3D_1rY" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.init(int)" resolve="init" />
+          <node concept="3DZmol" id="3RHdA3D_1sm" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1sk" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1lA" resolve="secretKeySize" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="3RHdA3D_1tp" role="3DZmuH">
+        <property role="TrG5h" value="i2" />
+        <node concept="gjU3G" id="3RHdA3D_1tq" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.init(int,java.security.SecureRandom)" resolve="init" />
+          <node concept="3DZmol" id="3RHdA3D_1tM" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1tK" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1lA" resolve="secretKeySize" />
+            </node>
+          </node>
+          <node concept="3DZmol" id="3RHdA3D_1u4" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1u2" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1n0" resolve="ranGen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="3RHdA3D_1vj" role="3DZmuH">
+        <property role="TrG5h" value="i3" />
+        <node concept="gjU3G" id="3RHdA3D_1vk" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.init(java.security.spec.AlgorithmParameterSpec)" resolve="init" />
+          <node concept="3DZmol" id="3RHdA3D_1vQ" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1vO" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1lR" resolve="params" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="3RHdA3D_1x3" role="3DZmuH">
+        <property role="TrG5h" value="i4" />
+        <node concept="gjU3G" id="3RHdA3D_1x4" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.init(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)" resolve="init" />
+          <node concept="3DZmol" id="3RHdA3D_1xA" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1x$" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1lR" resolve="params" />
+            </node>
+          </node>
+          <node concept="3DZmol" id="3RHdA3D_1xS" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1xQ" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1n0" resolve="ranGen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmon" id="3RHdA3D_1zh" role="3DZmuH">
+        <property role="TrG5h" value="i5" />
+        <node concept="gjU3G" id="3RHdA3D_1zi" role="gjZaj">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.init(java.security.SecureRandom)" resolve="init" />
+          <node concept="3DZmol" id="3RHdA3D_1zY" role="gjVns">
+            <node concept="gkoRC" id="3RHdA3D_1zW" role="gkqJZ">
+              <ref role="gkoRJ" node="3RHdA3D_1n0" resolve="ranGen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3DZmvB" id="3RHdA3D_1_K" role="3DZmuH">
+        <property role="TrG5h" value="Inits" />
+        <node concept="13JI61" id="3RHdA3D_1_L" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1rX" resolve="i1" />
+        </node>
+        <node concept="13JI61" id="3RHdA3D_1Ap" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1tp" resolve="i2" />
+        </node>
+        <node concept="13JI61" id="3RHdA3D_1As" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1vj" resolve="i3" />
+        </node>
+        <node concept="13JI61" id="3RHdA3D_1Aw" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1x3" resolve="i4" />
+        </node>
+        <node concept="13JI61" id="3RHdA3D_1A_" role="3DZmuB">
+          <ref role="13JI60" node="3RHdA3D_1x3" resolve="i4" />
+        </node>
+      </node>
+      <node concept="20kzeY" id="3RHdA3D_1AR" role="3DZmuH" />
+      <node concept="gknX_" id="3RHdA3D_1Dt" role="3DZmuH">
+        <property role="TrG5h" value="GenKey" />
+        <node concept="gjU3G" id="3RHdA3D_1Du" role="gkoR_">
+          <ref role="gjVmy" to="pfyx:~KeyGenerator.generateKey()" resolve="generateKey" />
+        </node>
+        <node concept="gkoRC" id="3RHdA3D_1Dv" role="gkqJi">
+          <ref role="gkoRJ" node="3RHdA3D_1m8" resolve="key" />
+        </node>
+      </node>
+    </node>
+    <node concept="1h0U3S" id="3RHdA3D_1lz" role="3DZmuV">
+      <node concept="1y6fP7" id="3RHdA3D_1EF" role="2HaykH">
+        <node concept="1y6fP7" id="3RHdA3D_1EG" role="1y6fQO">
+          <node concept="1y6fSb" id="3RHdA3D_1Ei" role="1y6fQO">
+            <ref role="1y6fS8" node="3RHdA3D_1qD" resolve="Gets" />
+          </node>
+          <node concept="1y31IU" id="3RHdA3D_1EH" role="1y6fPo">
+            <node concept="1y6fSb" id="3RHdA3D_1Et" role="1y36jk">
+              <ref role="1y6fS8" node="3RHdA3D_1_K" resolve="Inits" />
+            </node>
+          </node>
+        </node>
+        <node concept="1y6fSb" id="3RHdA3D_1EO" role="1y6fPo">
+          <ref role="1y6fS8" node="3RHdA3D_1Dt" resolve="GenKey" />
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmo$" id="3RHdA3D_1ER" role="3DZmuU">
+      <node concept="2CQV6U" id="3RHdA3D_1F6" role="3DZmuY">
+        <node concept="2$dyII" id="3RHdA3D_1Ff" role="2CQV6T">
+          <node concept="Xl_RD" id="3RHdA3D_1Fx" role="1ysvkh">
+            <property role="Xl_RC" value="AES" />
+          </node>
+          <node concept="Xl_RD" id="3RHdA3D_1FM" role="1ysvkh">
+            <property role="Xl_RC" value="HmacSHA256" />
+          </node>
+          <node concept="Xl_RD" id="3RHdA3D_1L5" role="1ysvkh">
+            <property role="Xl_RC" value="HmacSHA384" />
+          </node>
+          <node concept="Xl_RD" id="3RHdA3D_1Lx" role="1ysvkh">
+            <property role="Xl_RC" value="HmacSHA512" />
+          </node>
+          <node concept="gkoRC" id="3RHdA3D_1F5" role="1ysvk5">
+            <ref role="gkoRJ" node="3RHdA3D_1mt" resolve="secretKeyAlgorithm" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CQV6U" id="3RHdA3D_1Mb" role="3DZmuY">
+        <node concept="2$ezVI" id="3RHdA3D_1MW" role="2CQV6T">
+          <node concept="2$dyII" id="3RHdA3D_1NG" role="1ysuBB">
+            <node concept="3cmrfG" id="3RHdA3D_1NY" role="1ysvkh">
+              <property role="3cmrfH" value="128" />
+            </node>
+            <node concept="3cmrfG" id="3RHdA3D_1Oc" role="1ysvkh">
+              <property role="3cmrfH" value="192" />
+            </node>
+            <node concept="3cmrfG" id="3RHdA3D_1OS" role="1ysvkh">
+              <property role="3cmrfH" value="256" />
+            </node>
+            <node concept="gkoRC" id="3RHdA3D_1Nz" role="1ysvk5">
+              <ref role="gkoRJ" node="3RHdA3D_1lA" resolve="secretKeySize" />
+            </node>
+          </node>
+          <node concept="2$dyII" id="3RHdA3D_1Mr" role="1ysuBx">
+            <node concept="Xl_RD" id="3RHdA3D_1MJ" role="1ysvkh">
+              <property role="Xl_RC" value="AES" />
+            </node>
+            <node concept="gkoRC" id="3RHdA3D_1M9" role="1ysvk5">
+              <ref role="gkoRJ" node="3RHdA3D_1mt" resolve="secretKeyAlgorithm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmoq" id="3RHdA3D_1P2" role="3DZmuS">
+      <node concept="3kw8lT" id="3RHdA3D_1P8" role="3DZmv1">
+        <property role="TrG5h" value="generatedKey" />
+        <node concept="3DZmol" id="3RHdA3D_1Pe" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1Pc" role="gkqJZ">
+            <ref role="gkoRJ" node="3RHdA3D_1m8" resolve="key" />
+          </node>
+        </node>
+        <node concept="3DZmol" id="3RHdA3D_1Pp" role="3kw8l0">
+          <node concept="gkoRC" id="3RHdA3D_1Pn" role="gkqJZ">
+            <ref role="gkoRJ" node="3RHdA3D_1mt" resolve="secretKeyAlgorithm" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3DZmox" id="2x9V1e7AIYy">
+    <property role="TrG5h" value="PBEKeySpec" />
+    <node concept="3uibUv" id="2x9V1e7AIYz" role="1yEc0o">
+      <ref role="3uigEE" to="7lc:~PBEKeySpec" resolve="PBEKeySpec" />
+    </node>
+    <node concept="3DZmoB" id="2x9V1e7AIY$" role="3DZmv6">
+      <node concept="2Hjy6O" id="2x9V1e7AJgj" role="3DZmuy">
+        <property role="TrG5h" value="password" />
+        <node concept="10Q1$e" id="2x9V1e7AJgp" role="2HiiPi">
+          <node concept="10Pfzv" id="2x9V1e7AJgi" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="2Hjy6O" id="2x9V1e7AJgJ" role="3DZmuy">
+        <property role="TrG5h" value="salt" />
+        <node concept="10Q1$e" id="2x9V1e7AJgS" role="2HiiPi">
+          <node concept="10PrrI" id="2x9V1e7AJgH" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="2Hjy6O" id="2x9V1e7AJhh" role="3DZmuy">
+        <property role="TrG5h" value="iterationCount" />
+        <node concept="10Oyi0" id="2x9V1e7AJhf" role="2HiiPi" />
+      </node>
+      <node concept="2Hjy6O" id="2x9V1e7AJhG" role="3DZmuy">
+        <property role="TrG5h" value="keylength" />
+        <node concept="10Oyi0" id="2x9V1e7AJhE" role="2HiiPi" />
+      </node>
+    </node>
+    <node concept="3DZmo_" id="2x9V1e7AIY_" role="3DZmv4">
+      <node concept="3DZmon" id="2x9V1e7AJjo" role="3DZmuH">
+        <property role="TrG5h" value="Con" />
+        <node concept="gjU3G" id="2x9V1e7AJjp" role="gjZaj">
+          <ref role="gjVmy" to="7lc:~PBEKeySpec.&lt;init&gt;(char[],byte[],int,int)" resolve="PBEKeySpec" />
+          <node concept="3DZmol" id="2x9V1e7AJjw" role="gjVns">
+            <node concept="gkoRC" id="2x9V1e7AJju" role="gkqJZ">
+              <ref role="gkoRJ" node="2x9V1e7AJgj" resolve="password" />
+            </node>
+          </node>
+          <node concept="3DZmol" id="2x9V1e7AJjI" role="gjVns">
+            <node concept="gkoRC" id="2x9V1e7AJjG" role="gkqJZ">
+              <ref role="gkoRJ" node="2x9V1e7AJgJ" resolve="salt" />
+            </node>
+          </node>
+          <node concept="3DZmol" id="2x9V1e7AJk0" role="gjVns">
+            <node concept="gkoRC" id="2x9V1e7AJjY" role="gkqJZ">
+              <ref role="gkoRJ" node="2x9V1e7AJhh" resolve="iterationCount" />
+            </node>
+          </node>
+          <node concept="3DZmol" id="2x9V1e7AJkA" role="gjVns">
+            <node concept="gkoRC" id="2x9V1e7AJk$" role="gkqJZ">
+              <ref role="gkoRJ" node="2x9V1e7AJhG" resolve="keylength" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="20kzeY" id="2x9V1e7AJlJ" role="3DZmuH" />
+      <node concept="3DZmon" id="2x9V1e7AJmM" role="3DZmuH">
+        <property role="TrG5h" value="ClearPass" />
+        <node concept="gjU3G" id="2x9V1e7AJmN" role="gjZaj">
+          <ref role="gjVmy" to="7lc:~PBEKeySpec.clearPassword()" resolve="clearPassword" />
+        </node>
+      </node>
+    </node>
+    <node concept="1h0U3S" id="2x9V1e7AIYA" role="3DZmuV">
+      <node concept="1y6fP7" id="2x9V1e7AJou" role="2HaykH">
+        <node concept="1y6fSb" id="2x9V1e7AJo_" role="1y6fPo">
+          <ref role="1y6fS8" node="2x9V1e7AJmM" resolve="ClearPass" />
+        </node>
+        <node concept="1y6fSb" id="2x9V1e7AJoq" role="1y6fQO">
+          <ref role="1y6fS8" node="2x9V1e7AJjo" resolve="Con" />
+        </node>
+      </node>
+    </node>
+    <node concept="gnR5D" id="2x9V1e7AJn1" role="gnR5C">
+      <node concept="gmPeb" id="2x9V1e7AJnP" role="gmPea">
+        <ref role="graLT" to="7lc:~PBEKeySpec.&lt;init&gt;(char[])" resolve="PBEKeySpec" />
+        <node concept="10Q1$e" id="2x9V1e7AJnR" role="graCI">
+          <node concept="10Pfzv" id="2x9V1e7AJnS" role="10Q1$1" />
+        </node>
+        <node concept="1yaY0_" id="2x9V1e7AJnX" role="1yaY0Z">
+          <ref role="1yaY0$" node="2x9V1e7AJjo" resolve="Con" />
+        </node>
+      </node>
+      <node concept="gmPeb" id="2x9V1e7AJo5" role="gmPea">
+        <ref role="graLT" to="7lc:~PBEKeySpec.&lt;init&gt;(char[],byte[],int)" resolve="PBEKeySpec" />
+        <node concept="10Q1$e" id="2x9V1e7AJoc" role="graCI">
+          <node concept="10Pfzv" id="2x9V1e7AJod" role="10Q1$1" />
+        </node>
+        <node concept="10Q1$e" id="2x9V1e7AJoe" role="graCI">
+          <node concept="10PrrI" id="2x9V1e7AJof" role="10Q1$1" />
+        </node>
+        <node concept="10Oyi0" id="2x9V1e7AJog" role="graCI" />
+        <node concept="1yaY0_" id="2x9V1e7AJoo" role="1yaY0Z">
+          <ref role="1yaY0$" node="2x9V1e7AJjo" resolve="Con" />
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmo$" id="2x9V1e7AJoC" role="3DZmuU">
+      <node concept="2CQV6U" id="2x9V1e7AJpj" role="3DZmuY">
+        <node concept="2CQV__" id="2x9V1e7AJpO" role="2CQV6T">
+          <node concept="14OCkl" id="2x9V1e7AJq9" role="2CQjfA">
+            <property role="977nU" value="10000" />
+          </node>
+          <node concept="gkoRC" id="2x9V1e7AJpi" role="2CQjfG">
+            <ref role="gkoRJ" node="2x9V1e7AJhh" resolve="iterationCount" />
+          </node>
+        </node>
+      </node>
+      <node concept="2CQV6U" id="2x9V1e7AJvy" role="3DZmuY">
+        <node concept="1yWc3u" id="2x9V1e7AJvs" role="2CQV6T">
+          <node concept="gkoRC" id="2x9V1e7AJvu" role="1yWc3j">
+            <ref role="gkoRJ" node="2x9V1e7AJgj" resolve="password" />
+          </node>
+          <node concept="17QB3L" id="2x9V1e7AJvR" role="1yWc3l" />
+        </node>
+      </node>
+      <node concept="2CQV6U" id="2x9V1e7AJwp" role="3DZmuY">
+        <node concept="1yW8XC" id="2x9V1e7AJwl" role="2CQV6T">
+          <node concept="gkoRC" id="2x9V1e7AJwn" role="1yW8XJ">
+            <ref role="gkoRJ" node="2x9V1e7AJgj" resolve="password" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DZmor" id="2x9V1e7AJwL" role="3DZmuT" />
+    <node concept="3DZmoq" id="2x9V1e7AJwN" role="3DZmuS">
+      <node concept="3kw8lT" id="2x9V1e7AJwT" role="3DZmv1">
+        <property role="TrG5h" value="speccedKey" />
+        <node concept="3kw8PP" id="2x9V1e7AJwX" role="3kw8l0" />
+        <node concept="3DZmol" id="2x9V1e7AJx5" role="3kw8l0">
+          <node concept="gkoRC" id="2x9V1e7AJx3" role="gkqJZ">
+            <ref role="gkoRJ" node="2x9V1e7AJhG" resolve="keylength" />
+          </node>
+        </node>
+        <node concept="1yaY0_" id="2x9V1e7AJxd" role="3k$LLi">
+          <ref role="1yaY0$" node="2x9V1e7AJjo" resolve="Con" />
+        </node>
+      </node>
+    </node>
+    <node concept="2JKMUD" id="2x9V1e7AJxf" role="2JQEb0">
+      <node concept="2JKMUC" id="2x9V1e7E_ZM" role="2JOIvc">
+        <ref role="2JKMUG" node="2x9V1e7AJwT" resolve="speccedKey" />
+        <node concept="3kw8PP" id="2x9V1e7E_ZQ" role="2JKMUI" />
+        <node concept="23FbgT" id="2x9V1e7E_ZW" role="2JKMUI" />
+        <node concept="1yaY0_" id="2x9V1e7EA02" role="2JKMUH">
+          <ref role="1yaY0$" node="2x9V1e7AJmM" resolve="ClearPass" />
         </node>
       </node>
     </node>

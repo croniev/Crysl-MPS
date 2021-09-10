@@ -90,22 +90,6 @@
       <ref role="PrY4T" node="1sUn0HP4rKF" resolve="INamedEvent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="59uLJIVCU4m">
-    <property role="EcuMT" value="5935400143408046358" />
-    <property role="TrG5h" value="Predicate" />
-    <node concept="1TJgyi" id="P_V$Z6WS11" role="1TKVEl">
-      <property role="IQ2nx" value="965439721548513345" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="P_V$Z6WS16" role="1TKVEi">
-      <property role="IQ2ns" value="965439721548513350" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="exprList" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="59uLJIVCU4j">
     <property role="EcuMT" value="5935400143408046355" />
     <property role="TrG5h" value="LitList" />
@@ -147,28 +131,28 @@
     <property role="EcuMT" value="5935400143408046305" />
     <property role="TrG5h" value="EnsuresBlock" />
     <property role="34LRSv" value="ENSURES" />
-    <property role="3GE5qa" value="blocks" />
+    <property role="3GE5qa" value="blocks.predicates.ensures" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59uLJIVCU4U" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046394" />
       <property role="20kJfa" value="pred" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU4m" resolve="Predicate" />
+      <ref role="20lvS9" node="3RHdA3Drrcp" resolve="EnsuresPredicate" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3w">
     <property role="EcuMT" value="5935400143408046304" />
     <property role="TrG5h" value="RequiresBlock" />
     <property role="34LRSv" value="REQUIRES" />
-    <property role="3GE5qa" value="blocks" />
+    <property role="3GE5qa" value="blocks.predicates.requires" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="59uLJIVCU4Q" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046390" />
       <property role="20kJfa" value="pred" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="59uLJIVCU4m" resolve="Predicate" />
+      <ref role="20lvS9" node="3RHdA3Drrci" resolve="RequiresPredicate" />
     </node>
   </node>
   <node concept="1TIwiD" id="59uLJIVCU3v">
@@ -267,15 +251,21 @@
     </node>
     <node concept="1TJgyj" id="59uLJIVCU52" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046402" />
-      <property role="20kJfa" value="require" />
+      <property role="20kJfa" value="requires" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="59uLJIVCU3w" resolve="RequiresBlock" />
     </node>
     <node concept="1TJgyj" id="59uLJIVCU53" role="1TKVEi">
       <property role="IQ2ns" value="5935400143408046403" />
-      <property role="20kJfa" value="ensure" />
+      <property role="20kJfa" value="ensures" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="59uLJIVCU3x" resolve="EnsuresBlock" />
+    </node>
+    <node concept="1TJgyj" id="2x9V1e7$OVj" role="1TKVEi">
+      <property role="IQ2ns" value="2903111003440107219" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="negates" />
+      <ref role="20lvS9" node="2x9V1e7yGaU" resolve="NegatesBlock" />
     </node>
     <node concept="PrWs8" id="5KaCeCYxUc1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -468,6 +458,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ThwReHZjtb" role="PzmwI">
       <ref role="PrY4T" node="2ThwReHZjt7" resolve="IMethodArgument" />
+    </node>
+    <node concept="PrWs8" id="3RHdA3DrrGf" role="PzmwI">
+      <ref role="PrY4T" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ThwReI0V3d">
@@ -749,6 +742,9 @@
     <property role="TrG5h" value="CustomPredicate" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="6dORzJbFuwK" resolve="ConstraintsExpression" />
+    <node concept="PrWs8" id="3RHdA3DCCB9" role="PzmwI">
+      <ref role="PrY4T" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1sUn0HPMDNl">
     <property role="EcuMT" value="1673751415812168917" />
@@ -858,6 +854,9 @@
       <property role="20kJfa" value="transformation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3R41AcH_oIb" resolve="VariableReference" />
+    </node>
+    <node concept="PrWs8" id="3RHdA3DCCBb" role="PzmwI">
+      <ref role="PrY4T" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dORzJb$zoU">
@@ -1042,6 +1041,9 @@
     <node concept="PrWs8" id="2ThwReHZjt8" role="PzmwI">
       <ref role="PrY4T" node="2ThwReHZjt7" resolve="IMethodArgument" />
     </node>
+    <node concept="PrWs8" id="3RHdA3DrrGi" role="PzmwI">
+      <ref role="PrY4T" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
     <node concept="1TJgyj" id="3R41AcH_qQs" role="1TKVEi">
       <property role="IQ2ns" value="4450689354785205660" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1112,6 +1114,101 @@
       <property role="IQ2nx" value="3428978538312767597" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RHdA3Drrci">
+    <property role="EcuMT" value="4462282595655070482" />
+    <property role="3GE5qa" value="blocks.predicates.requires" />
+    <property role="TrG5h" value="RequiresPredicate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3RHdA3Drrcn" role="1TKVEi">
+      <property role="IQ2ns" value="4462282595655070487" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
+    <node concept="1TJgyj" id="3RHdA3Drreu" role="1TKVEi">
+      <property role="IQ2ns" value="4462282595655070622" />
+      <property role="20kJfa" value="required" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3RHdA3Drrcp" resolve="EnsuresPredicate" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3RHdA3Drrcm">
+    <property role="TrG5h" value="IPredicateArgument" />
+    <property role="3GE5qa" value="blocks.predicates" />
+    <property role="EcuMT" value="4462282595655070485" />
+  </node>
+  <node concept="1TIwiD" id="3RHdA3Drrcp">
+    <property role="EcuMT" value="4462282595655070489" />
+    <property role="3GE5qa" value="blocks.predicates.ensures" />
+    <property role="TrG5h" value="EnsuresPredicate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RHdA3Drrcu" role="PzmwI">
+      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
+    </node>
+    <node concept="1TJgyj" id="3RHdA3Drrcw" role="1TKVEi">
+      <property role="IQ2ns" value="4462282595655070496" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
+    <node concept="1TJgyj" id="3RHdA3DvyCM" role="1TKVEi">
+      <property role="IQ2ns" value="4462282595656149554" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="after" />
+      <ref role="20lvS9" node="1sUn0HP4rKI" resolve="INamedEventReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3RHdA3DrrGl">
+    <property role="EcuMT" value="4462282595655072533" />
+    <property role="3GE5qa" value="blocks.predicates" />
+    <property role="TrG5h" value="ThisArgument" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3RHdA3DrrGm" role="PzmwI">
+      <ref role="PrY4T" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2x9V1e7yGaU">
+    <property role="EcuMT" value="2903111003439547066" />
+    <property role="3GE5qa" value="blocks.predicates.negates" />
+    <property role="TrG5h" value="NegatesBlock" />
+    <property role="34LRSv" value="NEGATES" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2x9V1e7AKJv" role="1TKVEi">
+      <property role="IQ2ns" value="2903111003440614367" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="negated" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2x9V1e7yGaV" resolve="NegatesPredicate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2x9V1e7yGaV">
+    <property role="EcuMT" value="2903111003439547067" />
+    <property role="3GE5qa" value="blocks.predicates.negates" />
+    <property role="TrG5h" value="NegatesPredicate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2x9V1e7yGaX" role="1TKVEi">
+      <property role="IQ2ns" value="2903111003439547069" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="args" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3RHdA3Drrcm" resolve="IPredicateArgument" />
+    </node>
+    <node concept="1TJgyj" id="2x9V1e7yGaY" role="1TKVEi">
+      <property role="IQ2ns" value="2903111003439547070" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="after" />
+      <ref role="20lvS9" node="1sUn0HP4rKI" resolve="INamedEventReference" />
+    </node>
+    <node concept="1TJgyj" id="2x9V1e7yGaZ" role="1TKVEi">
+      <property role="IQ2ns" value="2903111003439547071" />
+      <property role="20kJfa" value="negates" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3RHdA3Drrcp" resolve="EnsuresPredicate" />
     </node>
   </node>
 </model>
