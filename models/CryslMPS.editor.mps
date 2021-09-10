@@ -747,7 +747,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="P_V$Z6YDpj" role="3EZMnx">
-        <ref role="1NtTu8" to="ouo3:59uLJIVCU4Q" resolve="pred" />
+        <ref role="1NtTu8" to="ouo3:59uLJIVCU4Q" resolve="predicates" />
         <node concept="pj6Ft" id="5KaCeCYvez$" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -785,7 +785,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="P_V$Z6Y3s_" role="3EZMnx">
-        <ref role="1NtTu8" to="ouo3:59uLJIVCU4U" resolve="pred" />
+        <ref role="1NtTu8" to="ouo3:59uLJIVCU4U" resolve="predicates" />
         <node concept="pj6Ft" id="5KaCeCYve$O" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

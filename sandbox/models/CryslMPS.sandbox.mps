@@ -164,10 +164,10 @@
         <child id="4450689354784568560" name="methodCall" index="gjZaj" />
       </concept>
       <concept id="5935400143408046305" name="CryslMPS.structure.EnsuresBlock" flags="ng" index="3DZmoq">
-        <child id="5935400143408046394" name="pred" index="3DZmv1" />
+        <child id="5935400143408046394" name="predicates" index="3DZmv1" />
       </concept>
       <concept id="5935400143408046304" name="CryslMPS.structure.RequiresBlock" flags="ng" index="3DZmor">
-        <child id="5935400143408046390" name="pred" index="3DZmvd" />
+        <child id="5935400143408046390" name="predicates" index="3DZmvd" />
       </concept>
       <concept id="5935400143408046298" name="CryslMPS.structure.Specification" flags="ng" index="3DZmox">
         <child id="4450689354785584907" name="forbidden" index="gnR5C" />
@@ -181,7 +181,7 @@
         <child id="5935400143408046397" name="objects" index="3DZmv6" />
       </concept>
       <concept id="5935400143408046303" name="CryslMPS.structure.ConstraintsBlock" flags="ng" index="3DZmo$">
-        <child id="5935400143408046405" name="req" index="3DZmuY" />
+        <child id="5935400143408046405" name="constraints" index="3DZmuY" />
       </concept>
       <concept id="5935400143408046302" name="CryslMPS.structure.EventsBlock" flags="ng" index="3DZmo_">
         <child id="5935400143408046422" name="events" index="3DZmuH" />
