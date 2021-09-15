@@ -65,6 +65,7 @@
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -177,6 +178,9 @@
         <child id="8207263695491670784" name="priority" index="2EmURo" />
       </concept>
       <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <property id="484443907677193054" name="focusWrapped" index="3g2DhO" />
         <child id="1984422498404558693" name="leftTransformationText" index="2ee7bq" />
@@ -1680,6 +1684,13 @@
     <property role="3GE5qa" value="blocks.predicates.requires" />
     <ref role="1XX52x" to="ouo3:3RHdA3Drrci" resolve="RequiresPredicate" />
     <node concept="3EZMnI" id="3RHdA3Drrfn" role="2wV5jI">
+      <node concept="1kHk_G" id="5c9tEdes_py" role="3EZMnx">
+        <property role="ZjSer" value="!" />
+        <ref role="1NtTu8" to="ouo3:5c9tEdes_p7" resolve="not" />
+        <node concept="11LMrY" id="5c9tEdes_pJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="l2Vlx" id="3RHdA3Drrfo" role="2iSdaV" />
       <node concept="1kIj98" id="3RHdA3Drrft" role="3EZMnx">
         <node concept="1iCGBv" id="3RHdA3Drrfz" role="1kIj9b">
