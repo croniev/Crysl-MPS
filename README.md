@@ -4,7 +4,7 @@ This repository contains a MPS implementation of the [CrySL](https://www.eclipse
 
 ## Dependencies
 
-To build the language dependencies to [mbeddr-platform](https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Mbeddr_Gradle_platform) as well as [iets3.opensource](https://github.com/IETS3/iets3.opensource) need to be accessible by MPS.
+To build the language, [mbeddr-platform](https://build.mbeddr.com/viewType.html?buildTypeId=Mbeddr2_Mbeddr_Gradle_platform) needs to be accessible by MPS.
 
 ## MPS Version
 
