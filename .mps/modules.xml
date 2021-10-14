@@ -11,6 +11,8 @@
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.textGen.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.typesystem.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/sandbox/CryslMPS.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Crysl-MPS.build/Crysl-MPS.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CryslMPS.runtime/CryslMPS.runtime.msd" folder="" />
     </projectModules>
   </component>
   <component name="ProjectModuleManager">
