@@ -14,6 +14,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="ouo3" ref="r:2b8b6dd3-189d-4f2b-93b8-c323e1a43b98(CryslMPS.structure)" implicit="true" />
+    <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="d2fr" ref="r:505ef6bb-aacf-494b-a186-d36c6e252c0b(CryslMPS.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -480,6 +481,31 @@
         <node concept="3uNrnE" id="2ThwReI7i_g" role="1Dwrff">
           <node concept="37vLTw" id="2ThwReI7i_h" role="2$L3a6">
             <ref role="3cqZAo" node="2ThwReI7i$D" resolve="i" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="514HmPwy6$8" role="3cqZAp" />
+      <node concept="1Z5TYs" id="514HmPwy7Mo" role="3cqZAp">
+        <node concept="mw_s8" id="514HmPwybyi" role="1ZfhKB">
+          <node concept="2OqwBi" id="514HmPwylTp" role="mwGJk">
+            <node concept="2OqwBi" id="514HmPwybFx" role="2Oq$k0">
+              <node concept="1YBJjd" id="514HmPwybyz" role="2Oq$k0">
+                <ref role="1YBMHb" node="2ThwReI6RWb" resolve="methodCall" />
+              </node>
+              <node concept="3TrEf2" id="514HmPwycEA" role="2OqNvi">
+                <ref role="3Tt5mk" to="ouo3:3R41AcHyVf1" resolve="method" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="514HmPwynAB" role="2OqNvi">
+              <ref role="37wK5l" to="tpek:i2fhBNC" resolve="getExpectedRetType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="514HmPwy7Mr" role="1ZfhK$">
+          <node concept="1Z2H0r" id="514HmPwy6AH" role="mwGJk">
+            <node concept="1YBJjd" id="514HmPwy6DU" role="1Z2MuG">
+              <ref role="1YBMHb" node="2ThwReI6RWb" resolve="methodCall" />
+            </node>
           </node>
         </node>
       </node>
@@ -1817,6 +1843,43 @@
     <node concept="1YaCAy" id="4S2AFdX9YT8" role="1YuTPh">
       <property role="TrG5h" value="cT" />
       <ref role="1YaFvo" to="tpee:g7uibYu" resolve="ClassifierType" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="514HmPwyxrg">
+    <property role="TrG5h" value="typeof_MethodWithReturn" />
+    <property role="3GE5qa" value="blocks.events" />
+    <node concept="3clFbS" id="514HmPwyxrh" role="18ibNy">
+      <node concept="1ZobV4" id="514HmPwyMzv" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="514HmPwyMzx" role="1ZfhK$">
+          <node concept="1Z2H0r" id="514HmPwyMzy" role="mwGJk">
+            <node concept="2OqwBi" id="514HmPwyMzz" role="1Z2MuG">
+              <node concept="1YBJjd" id="514HmPwyMz$" role="2Oq$k0">
+                <ref role="1YBMHb" node="514HmPwyxrj" resolve="methodWithReturn" />
+              </node>
+              <node concept="3TrEf2" id="514HmPwyMz_" role="2OqNvi">
+                <ref role="3Tt5mk" to="ouo3:3R41AcH_oI6" resolve="methodCall" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="514HmPwyMzA" role="1ZfhKB">
+          <node concept="1Z2H0r" id="514HmPwyMzB" role="mwGJk">
+            <node concept="2OqwBi" id="514HmPwyMzC" role="1Z2MuG">
+              <node concept="1YBJjd" id="514HmPwyMzD" role="2Oq$k0">
+                <ref role="1YBMHb" node="514HmPwyxrj" resolve="methodWithReturn" />
+              </node>
+              <node concept="3TrEf2" id="514HmPwyMzE" role="2OqNvi">
+                <ref role="3Tt5mk" to="ouo3:3R41AcH_qQL" resolve="variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="514HmPwyxrj" role="1YuTPh">
+      <property role="TrG5h" value="methodWithReturn" />
+      <ref role="1YaFvo" to="ouo3:3R41AcH_n$6" resolve="MethodWithReturn" />
     </node>
   </node>
 </model>
