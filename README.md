@@ -19,3 +19,13 @@ Finally, restart MPS and re-open this project to be ready to use it!
 ## MPS Version
 
 The project is known to work on MPS version 2021.2.1 when installing mentioned dependencies from the plugin marketplace.
+
+## CogniCryptChecks
+
+The CogniCryptChecks language integrates [CogniCrypt](https://github.com/CROSSINGTUD/CryptoAnalysis) into the
+BaseLanguage editor. 
+The check can be run through the editor intention `Analyze with CogniCrypt`.
+Errors are then shown at the method level, details about the errors can be found in the inspector.
+
+To run CogniCrypt, the environment variable `cognicrypt_path` must be set to point to a CogniCrypt jar which includes
+all needed dependencies.

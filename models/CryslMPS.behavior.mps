@@ -1388,6 +1388,22 @@
               </node>
             </node>
           </node>
+          <node concept="2tP$F7" id="719Jj7afTPl" role="1_3QMm">
+            <node concept="3clFbS" id="719Jj7afTPm" role="3Kbo56">
+              <node concept="3cpWs6" id="719Jj7afTPn" role="3cqZAp">
+                <node concept="Xl_RD" id="719Jj7afVX7" role="3cqZAk">
+                  <property role="Xl_RC" value="java.lang.String" />
+                </node>
+              </node>
+            </node>
+            <node concept="2mg5xd" id="719Jj7afXBr" role="2smD8_">
+              <node concept="1__dXe" id="719Jj7afXBp" role="2mg5xb">
+                <node concept="2pJPED" id="719Jj7afXBq" role="1__i56">
+                  <ref role="2pJxaS" to="tpee:hP7QB7G" resolve="StringType" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="37vLTw" id="514HmPwwEv3" role="1_3QMn">
             <ref role="3cqZAo" node="514HmPwwEs5" resolve="type" />
           </node>

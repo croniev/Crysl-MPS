@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/CryslMPS.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CogniCryptChecks/CogniCryptChecks.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.behavior.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.constraints.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.editor.mps" folder="" />
@@ -11,6 +12,8 @@
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.textGen.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/models/CryslMPS.typesystem.mps" folder="" />
       <modulePath path="$PROJECT_DIR$/sandbox/CryslMPS.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CogniCryptChecks.runtime/CogniCryptChecks.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CogniCryptChecks.sandbox/CogniCryptChecks.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Crysl-MPS.build/Crysl-MPS.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/CryslMPS.runtime/CryslMPS.runtime.msd" folder="" />
     </projectModules>
