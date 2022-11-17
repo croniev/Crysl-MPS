@@ -97,16 +97,12 @@
         <property id="103124610882049018" name="rule" index="26lWMN" />
         <property id="103124610882049020" name="richText" index="26lWMP" />
       </concept>
-      <concept id="3254842044482764664" name="CogniCryptChecks.structure.CheckedJavaClass" flags="ng" index="ojjFw">
-        <child id="5439721140364307182" name="class" index="zTiXw" />
-      </concept>
       <concept id="2815928117561355925" name="CogniCryptChecks.structure.CogniCryptMethodErrors" flags="ng" index="ZkO4x">
         <child id="103124610882049024" name="errors" index="26lWH9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -122,296 +118,289 @@
       </concept>
     </language>
   </registry>
-  <node concept="ojjFw" id="4HXLoTCAjAb">
+  <node concept="312cEu" id="5iCyJbsKriO">
     <property role="TrG5h" value="RequiredPredicateErrorExample" />
-    <property role="3GE5qa" value="" />
-    <node concept="312cEu" id="4HXLoTCAjAc" role="zTiXw">
-      <property role="TrG5h" value="RequiredPredicateErrorExample" />
-      <node concept="2tJIrI" id="4HXLoTCApFV" role="jymVt" />
-      <node concept="2YIFZL" id="4HXLoTCApGN" role="jymVt">
-        <property role="TrG5h" value="main" />
-        <node concept="3clFbS" id="4HXLoTCApGQ" role="3clF47">
-          <node concept="3cpWs8" id="lY5ZtNOVJY" role="3cqZAp">
-            <node concept="3cpWsn" id="lY5ZtNOVJZ" role="3cpWs9">
-              <property role="TrG5h" value="keyGen" />
-              <node concept="3uibUv" id="lY5ZtNOVK0" role="1tU5fm">
-                <ref role="3uigEE" to="pfyx:~KeyGenerator" resolve="KeyGenerator" />
-              </node>
-              <node concept="2YIFZM" id="lY5ZtNOVPD" role="33vP2m">
-                <ref role="37wK5l" to="pfyx:~KeyGenerator.getInstance(java.lang.String)" resolve="getInstance" />
-                <ref role="1Pybhc" to="pfyx:~KeyGenerator" resolve="KeyGenerator" />
-                <node concept="Xl_RD" id="lY5ZtNOVPN" role="37wK5m">
-                  <property role="Xl_RC" value="AES" />
-                </node>
+    <node concept="2tJIrI" id="5iCyJbsKrVi" role="jymVt" />
+    <node concept="2YIFZL" id="5iCyJbsKrVA" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="3clFbS" id="5iCyJbsKrVB" role="3clF47">
+        <node concept="3cpWs8" id="5iCyJbsKrVC" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrVD" role="3cpWs9">
+            <property role="TrG5h" value="keyGen" />
+            <node concept="3uibUv" id="5iCyJbsKrVE" role="1tU5fm">
+              <ref role="3uigEE" to="pfyx:~KeyGenerator" resolve="KeyGenerator" />
+            </node>
+            <node concept="2YIFZM" id="5iCyJbsKrVF" role="33vP2m">
+              <ref role="37wK5l" to="pfyx:~KeyGenerator.getInstance(java.lang.String)" resolve="getInstance" />
+              <ref role="1Pybhc" to="pfyx:~KeyGenerator" resolve="KeyGenerator" />
+              <node concept="Xl_RD" id="5iCyJbsKrVG" role="37wK5m">
+                <property role="Xl_RC" value="AES" />
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="lY5ZtNOVRc" role="3cqZAp" />
-          <node concept="3clFbF" id="lY5ZtNOW5h" role="3cqZAp">
-            <node concept="2OqwBi" id="lY5ZtNOW96" role="3clFbG">
-              <node concept="37vLTw" id="lY5ZtNOW5f" role="2Oq$k0">
-                <ref role="3cqZAo" node="lY5ZtNOVJZ" resolve="keyGen" />
-              </node>
-              <node concept="liA8E" id="lY5ZtNOWeC" role="2OqNvi">
-                <ref role="37wK5l" to="pfyx:~KeyGenerator.init(int)" resolve="init" />
-                <node concept="3cmrfG" id="lY5ZtNOWv_" role="37wK5m">
-                  <property role="3cmrfH" value="47" />
-                </node>
+        </node>
+        <node concept="3clFbH" id="5iCyJbsKrVH" role="3cqZAp" />
+        <node concept="3clFbF" id="5iCyJbsKrVI" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrVJ" role="3clFbG">
+            <node concept="37vLTw" id="5iCyJbsKrVK" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrVD" resolve="keyGen" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrVL" role="2OqNvi">
+              <ref role="37wK5l" to="pfyx:~KeyGenerator.init(int)" resolve="init" />
+              <node concept="3cmrfG" id="5iCyJbsKrVM" role="37wK5m">
+                <property role="3cmrfH" value="47" />
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="lY5ZtNOWAK" role="3cqZAp">
-            <node concept="3cpWsn" id="lY5ZtNOWAL" role="3cpWs9">
-              <property role="TrG5h" value="secretKey" />
-              <node concept="3uibUv" id="lY5ZtNOWAM" role="1tU5fm">
-                <ref role="3uigEE" to="pfyx:~SecretKey" resolve="SecretKey" />
+        </node>
+        <node concept="3cpWs8" id="5iCyJbsKrVN" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrVO" role="3cpWs9">
+            <property role="TrG5h" value="secretKey" />
+            <node concept="3uibUv" id="5iCyJbsKrVP" role="1tU5fm">
+              <ref role="3uigEE" to="pfyx:~SecretKey" resolve="SecretKey" />
+            </node>
+            <node concept="2OqwBi" id="5iCyJbsKrVQ" role="33vP2m">
+              <node concept="37vLTw" id="5iCyJbsKrVR" role="2Oq$k0">
+                <ref role="3cqZAo" node="5iCyJbsKrVD" resolve="keyGen" />
               </node>
-              <node concept="2OqwBi" id="lY5ZtNOWP1" role="33vP2m">
-                <node concept="37vLTw" id="lY5ZtNOWKE" role="2Oq$k0">
-                  <ref role="3cqZAo" node="lY5ZtNOVJZ" resolve="keyGen" />
-                </node>
-                <node concept="liA8E" id="lY5ZtNOWUs" role="2OqNvi">
-                  <ref role="37wK5l" to="pfyx:~KeyGenerator.generateKey()" resolve="generateKey" />
-                </node>
+              <node concept="liA8E" id="5iCyJbsKrVS" role="2OqNvi">
+                <ref role="37wK5l" to="pfyx:~KeyGenerator.generateKey()" resolve="generateKey" />
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="lY5ZtNOX2t" role="3cqZAp">
-            <node concept="3cpWsn" id="lY5ZtNOX2u" role="3cpWs9">
-              <property role="TrG5h" value="c" />
-              <node concept="3uibUv" id="lY5ZtNOX2v" role="1tU5fm">
-                <ref role="3uigEE" to="pfyx:~Cipher" resolve="Cipher" />
-              </node>
-              <node concept="2YIFZM" id="lY5ZtNOXcG" role="33vP2m">
-                <ref role="37wK5l" to="pfyx:~Cipher.getInstance(java.lang.String)" resolve="getInstance" />
-                <ref role="1Pybhc" to="pfyx:~Cipher" resolve="Cipher" />
-                <node concept="Xl_RD" id="lY5ZtNOXg7" role="37wK5m">
-                  <property role="Xl_RC" value="AES/CBC/PKCS5Padding" />
-                </node>
+        </node>
+        <node concept="3cpWs8" id="5iCyJbsKrVT" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrVU" role="3cpWs9">
+            <property role="TrG5h" value="c" />
+            <node concept="3uibUv" id="5iCyJbsKrVV" role="1tU5fm">
+              <ref role="3uigEE" to="pfyx:~Cipher" resolve="Cipher" />
+            </node>
+            <node concept="2YIFZM" id="5iCyJbsKrVW" role="33vP2m">
+              <ref role="1Pybhc" to="pfyx:~Cipher" resolve="Cipher" />
+              <ref role="37wK5l" to="pfyx:~Cipher.getInstance(java.lang.String)" resolve="getInstance" />
+              <node concept="Xl_RD" id="5iCyJbsKrVX" role="37wK5m">
+                <property role="Xl_RC" value="AES/CBC/PKCS5Padding" />
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="lY5ZtNOXAv" role="3cqZAp" />
-          <node concept="3clFbF" id="lY5ZtNOXFL" role="3cqZAp">
-            <node concept="2OqwBi" id="lY5ZtNOXKC" role="3clFbG">
-              <node concept="37vLTw" id="lY5ZtNOXFJ" role="2Oq$k0">
-                <ref role="3cqZAo" node="lY5ZtNOX2u" resolve="c" />
+        </node>
+        <node concept="3clFbH" id="5iCyJbsKrVY" role="3cqZAp" />
+        <node concept="3clFbF" id="5iCyJbsKrVZ" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrW0" role="3clFbG">
+            <node concept="37vLTw" id="5iCyJbsKrW1" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrVU" resolve="c" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrW2" role="2OqNvi">
+              <ref role="37wK5l" to="pfyx:~Cipher.init(int,java.security.Key)" resolve="init" />
+              <node concept="10M0yZ" id="5iCyJbsKrW3" role="37wK5m">
+                <ref role="3cqZAo" to="pfyx:~Cipher.ENCRYPT_MODE" resolve="ENCRYPT_MODE" />
+                <ref role="1PxDUh" to="pfyx:~Cipher" resolve="Cipher" />
               </node>
-              <node concept="liA8E" id="lY5ZtNOXRA" role="2OqNvi">
-                <ref role="37wK5l" to="pfyx:~Cipher.init(int,java.security.Key)" resolve="init" />
-                <node concept="10M0yZ" id="lY5ZtNOXZP" role="37wK5m">
-                  <ref role="3cqZAo" to="pfyx:~Cipher.ENCRYPT_MODE" resolve="ENCRYPT_MODE" />
-                  <ref role="1PxDUh" to="pfyx:~Cipher" resolve="Cipher" />
-                </node>
-                <node concept="37vLTw" id="lY5ZtNOY7X" role="37wK5m">
-                  <ref role="3cqZAo" node="lY5ZtNOWAL" resolve="secretKey" />
-                </node>
+              <node concept="37vLTw" id="5iCyJbsKrW4" role="37wK5m">
+                <ref role="3cqZAo" node="5iCyJbsKrVO" resolve="secretKey" />
               </node>
             </node>
           </node>
-          <node concept="3cpWs8" id="lY5ZtNOYsO" role="3cqZAp">
-            <node concept="3cpWsn" id="lY5ZtNOYsU" role="3cpWs9">
-              <property role="TrG5h" value="encText" />
-              <node concept="10Q1$e" id="lY5ZtNOYsW" role="1tU5fm">
-                <node concept="10PrrI" id="lY5ZtNOYsY" role="10Q1$1" />
+        </node>
+        <node concept="3cpWs8" id="5iCyJbsKrW5" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrW6" role="3cpWs9">
+            <property role="TrG5h" value="encText" />
+            <node concept="10Q1$e" id="5iCyJbsKrW7" role="1tU5fm">
+              <node concept="10PrrI" id="5iCyJbsKrW8" role="10Q1$1" />
+            </node>
+            <node concept="2OqwBi" id="5iCyJbsKrW9" role="33vP2m">
+              <node concept="37vLTw" id="5iCyJbsKrWa" role="2Oq$k0">
+                <ref role="3cqZAo" node="5iCyJbsKrVU" resolve="c" />
               </node>
-              <node concept="2OqwBi" id="lY5ZtNOYO7" role="33vP2m">
-                <node concept="37vLTw" id="lY5ZtNOYGB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="lY5ZtNOX2u" resolve="c" />
-                </node>
-                <node concept="liA8E" id="lY5ZtNOYZG" role="2OqNvi">
-                  <ref role="37wK5l" to="pfyx:~Cipher.doFinal(byte[])" resolve="doFinal" />
-                  <node concept="2OqwBi" id="lY5ZtNOZL7" role="37wK5m">
-                    <node concept="Xl_RD" id="lY5ZtNOZ6y" role="2Oq$k0">
-                      <property role="Xl_RC" value="abc" />
-                    </node>
-                    <node concept="liA8E" id="lY5ZtNOZYV" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.getBytes()" resolve="getBytes" />
-                    </node>
+              <node concept="liA8E" id="5iCyJbsKrWb" role="2OqNvi">
+                <ref role="37wK5l" to="pfyx:~Cipher.doFinal(byte[])" resolve="doFinal" />
+                <node concept="2OqwBi" id="5iCyJbsKrWc" role="37wK5m">
+                  <node concept="Xl_RD" id="5iCyJbsKrWd" role="2Oq$k0">
+                    <property role="Xl_RC" value="abc" />
+                  </node>
+                  <node concept="liA8E" id="5iCyJbsKrWe" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.getBytes()" resolve="getBytes" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3Tm1VV" id="4HXLoTCApGe" role="1B3o_S" />
-        <node concept="3cqZAl" id="4HXLoTCApGC" role="3clF45" />
-        <node concept="37vLTG" id="4HXLoTCApHg" role="3clF46">
-          <property role="TrG5h" value="args" />
-          <node concept="10Q1$e" id="4HXLoTCApHC" role="1tU5fm">
-            <node concept="3uibUv" id="4HXLoTCApHf" role="10Q1$1">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-          </node>
-        </node>
-        <node concept="3uibUv" id="lY5ZtNOW0C" role="Sfmx6">
-          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-        </node>
-        <node concept="ZkO4x" id="5iCyJbsH7Oo" role="lGtFl">
-          <node concept="26lWMK" id="5iCyJbsI_AJ" role="26lWH9">
-            <property role="26lWMN" value="RequiredPredicateError" />
-            <property role="26lWMM" value="Second parameter was not properly generated as generatedKey." />
-            <property role="26lWMP" value="RequiredPredicateError violating CrySL rule for javax.crypto.Cipher." />
-            <property role="26kMSn" value="c.init(Cipher.ENCRYPT_MODE, secretKey);" />
-          </node>
-          <node concept="26lWMK" id="5iCyJbsI_AK" role="26lWH9">
-            <property role="26lWMN" value="ConstraintError" />
-            <property role="26lWMM" value="First parameter (with value 47) should be any of {128, 192, 256}." />
-            <property role="26lWMP" value="ConstraintError violating CrySL rule for javax.crypto.KeyGenerator." />
-            <property role="26kMSn" value="keyGen.init(47);" />
+      </node>
+      <node concept="3Tm1VV" id="5iCyJbsKrWf" role="1B3o_S" />
+      <node concept="3cqZAl" id="5iCyJbsKrWg" role="3clF45" />
+      <node concept="37vLTG" id="5iCyJbsKrWh" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="5iCyJbsKrWi" role="1tU5fm">
+          <node concept="3uibUv" id="5iCyJbsKrWj" role="10Q1$1">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
           </node>
         </node>
       </node>
-      <node concept="2tJIrI" id="4HXLoTCApG0" role="jymVt" />
-      <node concept="3Tm1VV" id="4HXLoTCAjAd" role="1B3o_S" />
+      <node concept="3uibUv" id="5iCyJbsKrWk" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+      </node>
+      <node concept="ZkO4x" id="5iCyJbsKrWl" role="lGtFl">
+        <node concept="26lWMK" id="7h6k9fmPHNW" role="26lWH9">
+          <property role="26lWMN" value="RequiredPredicateError" />
+          <property role="26lWMM" value="Second parameter was not properly generated as generatedKey." />
+          <property role="26lWMP" value="RequiredPredicateError violating CrySL rule for javax.crypto.Cipher." />
+          <property role="26kMSn" value="c.init(Cipher.ENCRYPT_MODE, secretKey);" />
+        </node>
+        <node concept="26lWMK" id="7h6k9fmPHNX" role="26lWH9">
+          <property role="26lWMN" value="ConstraintError" />
+          <property role="26lWMM" value="First parameter (with value 47) should be any of {128, 192, 256}." />
+          <property role="26lWMP" value="ConstraintError violating CrySL rule for javax.crypto.KeyGenerator." />
+          <property role="26kMSn" value="keyGen.init(47);" />
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="5iCyJbsKrVn" role="jymVt" />
+    <node concept="3Tm1VV" id="5iCyJbsKriP" role="1B3o_S" />
   </node>
-  <node concept="ojjFw" id="2skbVgocAse">
+  <node concept="312cEu" id="5iCyJbsKrjo">
     <property role="TrG5h" value="TypestateErrorExample" />
-    <node concept="312cEu" id="2skbVgocAsf" role="zTiXw">
-      <property role="TrG5h" value="TypestateErrorExample" />
-      <node concept="2tJIrI" id="2skbVgocAsL" role="jymVt" />
-      <node concept="2YIFZL" id="2skbVgocAwW" role="jymVt">
-        <property role="TrG5h" value="main" />
-        <node concept="3clFbS" id="2skbVgocAwZ" role="3clF47">
-          <node concept="3cpWs8" id="2skbVgocAyn" role="3cqZAp">
-            <node concept="3cpWsn" id="2skbVgocAym" role="3cpWs9">
-              <property role="TrG5h" value="s" />
-              <node concept="3uibUv" id="2skbVgocAyo" role="1tU5fm">
-                <ref role="3uigEE" to="jgjw:~Signature" resolve="Signature" />
-              </node>
-              <node concept="2YIFZM" id="2skbVgocAJ8" role="33vP2m">
-                <ref role="37wK5l" to="jgjw:~Signature.getInstance(java.lang.String)" resolve="getInstance" />
-                <ref role="1Pybhc" to="jgjw:~Signature" resolve="Signature" />
-                <node concept="Xl_RD" id="2skbVgocAJ9" role="37wK5m">
-                  <property role="Xl_RC" value="SHA256withRSA" />
-                </node>
-              </node>
+    <node concept="2tJIrI" id="5iCyJbsKrlk" role="jymVt" />
+    <node concept="2YIFZL" id="5iCyJbsKrlL" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="3clFbS" id="5iCyJbsKrlM" role="3clF47">
+        <node concept="3cpWs8" id="5iCyJbsKrlN" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrlO" role="3cpWs9">
+            <property role="TrG5h" value="s" />
+            <node concept="3uibUv" id="5iCyJbsKrlP" role="1tU5fm">
+              <ref role="3uigEE" to="jgjw:~Signature" resolve="Signature" />
             </node>
-          </node>
-          <node concept="3clFbF" id="2skbVgocAyr" role="3cqZAp">
-            <node concept="2OqwBi" id="2skbVgocACl" role="3clFbG">
-              <node concept="37vLTw" id="2skbVgocA$o" role="2Oq$k0">
-                <ref role="3cqZAo" node="2skbVgocAym" resolve="s" />
-              </node>
-              <node concept="liA8E" id="2skbVgocACm" role="2OqNvi">
-                <ref role="37wK5l" to="jgjw:~Signature.initSign(java.security.PrivateKey)" resolve="initSign" />
-                <node concept="1rXfSq" id="2skbVgocACn" role="37wK5m">
-                  <ref role="37wK5l" node="2skbVgocBdT" resolve="getPrivateKey" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3SKdUt" id="2skbVgocAyw" role="3cqZAp">
-            <node concept="1PaTwC" id="2skbVgocAyx" role="1aUNEU">
-              <node concept="3oM_SD" id="2skbVgocAyy" role="1PaTwD">
-                <property role="3oM_SC" value="s.update(args[0].getBytes());" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="2skbVgocAyu" role="3cqZAp">
-            <node concept="2OqwBi" id="2skbVgocADw" role="3clFbG">
-              <node concept="37vLTw" id="2skbVgocA$O" role="2Oq$k0">
-                <ref role="3cqZAo" node="2skbVgocAym" resolve="s" />
-              </node>
-              <node concept="liA8E" id="2skbVgocADx" role="2OqNvi">
-                <ref role="37wK5l" to="jgjw:~Signature.sign()" resolve="sign" />
+            <node concept="2YIFZM" id="5iCyJbsKrlQ" role="33vP2m">
+              <ref role="1Pybhc" to="jgjw:~Signature" resolve="Signature" />
+              <ref role="37wK5l" to="jgjw:~Signature.getInstance(java.lang.String)" resolve="getInstance" />
+              <node concept="Xl_RD" id="5iCyJbsKrlR" role="37wK5m">
+                <property role="Xl_RC" value="SHA256withRSA" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3Tm1VV" id="2skbVgocAwn" role="1B3o_S" />
-        <node concept="3cqZAl" id="2skbVgocAwL" role="3clF45" />
-        <node concept="37vLTG" id="2skbVgocAxp" role="3clF46">
-          <property role="TrG5h" value="args" />
-          <node concept="10Q1$e" id="2skbVgocAxK" role="1tU5fm">
-            <node concept="3uibUv" id="2skbVgocAxo" role="10Q1$1">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        <node concept="3clFbF" id="5iCyJbsKrlS" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrlT" role="3clFbG">
+            <node concept="37vLTw" id="5iCyJbsKrlU" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrlO" resolve="s" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrlV" role="2OqNvi">
+              <ref role="37wK5l" to="jgjw:~Signature.initSign(java.security.PrivateKey)" resolve="initSign" />
+              <node concept="1rXfSq" id="5iCyJbsKrlW" role="37wK5m">
+                <ref role="37wK5l" node="5iCyJbsKrmd" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3uibUv" id="2skbVgocB6G" role="Sfmx6">
-          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+        <node concept="3SKdUt" id="5iCyJbsKrlX" role="3cqZAp">
+          <node concept="1PaTwC" id="5iCyJbsKrlY" role="1aUNEU">
+            <node concept="3oM_SD" id="5iCyJbsKrlZ" role="1PaTwD">
+              <property role="3oM_SC" value="s.update(args[0].getBytes());" />
+            </node>
+          </node>
         </node>
-        <node concept="ZkO4x" id="5iCyJbsH7Om" role="lGtFl">
-          <node concept="26lWMK" id="5iCyJbsI_AI" role="26lWH9">
-            <property role="26lWMN" value="TypestateError" />
-            <property role="26lWMM" value="Unexpected call to method sign on object of type java.security.Signature. Expect a call to one of the following methods initSign,update." />
-            <property role="26lWMP" value="TypestateError violating CrySL rule for java.security.Signature." />
-            <property role="26kMSn" value="s.sign();" />
+        <node concept="3clFbF" id="5iCyJbsKrm0" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrm1" role="3clFbG">
+            <node concept="37vLTw" id="5iCyJbsKrm2" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrlO" resolve="s" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrm3" role="2OqNvi">
+              <ref role="37wK5l" to="jgjw:~Signature.sign()" resolve="sign" />
+            </node>
           </node>
         </node>
       </node>
-      <node concept="2tJIrI" id="2skbVgocBCk" role="jymVt" />
-      <node concept="2YIFZL" id="2skbVgocBdT" role="jymVt">
-        <property role="TrG5h" value="getPrivateKey" />
-        <node concept="3uibUv" id="2skbVgocBdU" role="Sfmx6">
-          <ref role="3uigEE" to="jgjw:~GeneralSecurityException" resolve="GeneralSecurityException" />
-        </node>
-        <node concept="3clFbS" id="2skbVgocBdV" role="3clF47">
-          <node concept="3cpWs8" id="2skbVgocBdX" role="3cqZAp">
-            <node concept="3cpWsn" id="2skbVgocBdW" role="3cpWs9">
-              <property role="TrG5h" value="kpgen" />
-              <node concept="3uibUv" id="2skbVgocBdY" role="1tU5fm">
-                <ref role="3uigEE" to="jgjw:~KeyPairGenerator" resolve="KeyPairGenerator" />
-              </node>
-              <node concept="2YIFZM" id="2skbVgocBk6" role="33vP2m">
-                <ref role="1Pybhc" to="jgjw:~KeyPairGenerator" resolve="KeyPairGenerator" />
-                <ref role="37wK5l" to="jgjw:~KeyPairGenerator.getInstance(java.lang.String)" resolve="getInstance" />
-                <node concept="Xl_RD" id="2skbVgocBk7" role="37wK5m">
-                  <property role="Xl_RC" value="RSA" />
-                </node>
-              </node>
-            </node>
+      <node concept="3Tm1VV" id="5iCyJbsKrm4" role="1B3o_S" />
+      <node concept="3cqZAl" id="5iCyJbsKrm5" role="3clF45" />
+      <node concept="37vLTG" id="5iCyJbsKrm6" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="5iCyJbsKrm7" role="1tU5fm">
+          <node concept="3uibUv" id="5iCyJbsKrm8" role="10Q1$1">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
           </node>
-          <node concept="3clFbF" id="2skbVgocBe1" role="3cqZAp">
-            <node concept="2OqwBi" id="2skbVgocBtZ" role="3clFbG">
-              <node concept="37vLTw" id="2skbVgocBkh" role="2Oq$k0">
-                <ref role="3cqZAo" node="2skbVgocBdW" resolve="kpgen" />
-              </node>
-              <node concept="liA8E" id="2skbVgocBu0" role="2OqNvi">
-                <ref role="37wK5l" to="jgjw:~KeyPairGenerator.initialize(int)" resolve="initialize" />
-                <node concept="3cmrfG" id="2skbVgocBu1" role="37wK5m">
-                  <property role="3cmrfH" value="2048" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="2skbVgocBe5" role="3cqZAp">
-            <node concept="3cpWsn" id="2skbVgocBe4" role="3cpWs9">
-              <property role="TrG5h" value="gp" />
-              <node concept="3uibUv" id="2skbVgocBe6" role="1tU5fm">
-                <ref role="3uigEE" to="jgjw:~KeyPair" resolve="KeyPair" />
-              </node>
-              <node concept="2OqwBi" id="2skbVgocByM" role="33vP2m">
-                <node concept="37vLTw" id="2skbVgocBkp" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2skbVgocBdW" resolve="kpgen" />
-                </node>
-                <node concept="liA8E" id="2skbVgocByN" role="2OqNvi">
-                  <ref role="37wK5l" to="jgjw:~KeyPairGenerator.generateKeyPair()" resolve="generateKeyPair" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs6" id="2skbVgocBe8" role="3cqZAp">
-            <node concept="2OqwBi" id="2skbVgocBwg" role="3cqZAk">
-              <node concept="37vLTw" id="2skbVgocBkz" role="2Oq$k0">
-                <ref role="3cqZAo" node="2skbVgocBe4" resolve="gp" />
-              </node>
-              <node concept="liA8E" id="2skbVgocBwh" role="2OqNvi">
-                <ref role="37wK5l" to="jgjw:~KeyPair.getPrivate()" resolve="getPrivate" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3Tm6S6" id="2skbVgocBea" role="1B3o_S" />
-        <node concept="3uibUv" id="2skbVgocBeb" role="3clF45">
-          <ref role="3uigEE" to="jgjw:~PrivateKey" resolve="PrivateKey" />
         </node>
       </node>
-      <node concept="2tJIrI" id="2skbVgocAsQ" role="jymVt" />
-      <node concept="3Tm1VV" id="2skbVgocAsg" role="1B3o_S" />
+      <node concept="3uibUv" id="5iCyJbsKrm9" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+      </node>
+      <node concept="ZkO4x" id="5iCyJbsKrma" role="lGtFl">
+        <node concept="26lWMK" id="7h6k9fmPHNV" role="26lWH9">
+          <property role="26lWMN" value="TypestateError" />
+          <property role="26lWMM" value="Unexpected call to method sign on object of type java.security.Signature. Expect a call to one of the following methods initSign,update." />
+          <property role="26lWMP" value="TypestateError violating CrySL rule for java.security.Signature." />
+          <property role="26kMSn" value="s.sign();" />
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="5iCyJbsKrmc" role="jymVt" />
+    <node concept="2YIFZL" id="5iCyJbsKrmd" role="jymVt">
+      <property role="TrG5h" value="getPrivateKey" />
+      <node concept="3uibUv" id="5iCyJbsKrme" role="Sfmx6">
+        <ref role="3uigEE" to="jgjw:~GeneralSecurityException" resolve="GeneralSecurityException" />
+      </node>
+      <node concept="3clFbS" id="5iCyJbsKrmf" role="3clF47">
+        <node concept="3cpWs8" id="5iCyJbsKrmg" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrmh" role="3cpWs9">
+            <property role="TrG5h" value="kpgen" />
+            <node concept="3uibUv" id="5iCyJbsKrmi" role="1tU5fm">
+              <ref role="3uigEE" to="jgjw:~KeyPairGenerator" resolve="KeyPairGenerator" />
+            </node>
+            <node concept="2YIFZM" id="5iCyJbsKrmj" role="33vP2m">
+              <ref role="1Pybhc" to="jgjw:~KeyPairGenerator" resolve="KeyPairGenerator" />
+              <ref role="37wK5l" to="jgjw:~KeyPairGenerator.getInstance(java.lang.String)" resolve="getInstance" />
+              <node concept="Xl_RD" id="5iCyJbsKrmk" role="37wK5m">
+                <property role="Xl_RC" value="RSA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5iCyJbsKrml" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrmm" role="3clFbG">
+            <node concept="37vLTw" id="5iCyJbsKrmn" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrmh" resolve="kpgen" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrmo" role="2OqNvi">
+              <ref role="37wK5l" to="jgjw:~KeyPairGenerator.initialize(int)" resolve="initialize" />
+              <node concept="3cmrfG" id="5iCyJbsKrmp" role="37wK5m">
+                <property role="3cmrfH" value="2048" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5iCyJbsKrmq" role="3cqZAp">
+          <node concept="3cpWsn" id="5iCyJbsKrmr" role="3cpWs9">
+            <property role="TrG5h" value="gp" />
+            <node concept="3uibUv" id="5iCyJbsKrms" role="1tU5fm">
+              <ref role="3uigEE" to="jgjw:~KeyPair" resolve="KeyPair" />
+            </node>
+            <node concept="2OqwBi" id="5iCyJbsKrmt" role="33vP2m">
+              <node concept="37vLTw" id="5iCyJbsKrmu" role="2Oq$k0">
+                <ref role="3cqZAo" node="5iCyJbsKrmh" resolve="kpgen" />
+              </node>
+              <node concept="liA8E" id="5iCyJbsKrmv" role="2OqNvi">
+                <ref role="37wK5l" to="jgjw:~KeyPairGenerator.generateKeyPair()" resolve="generateKeyPair" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5iCyJbsKrmw" role="3cqZAp">
+          <node concept="2OqwBi" id="5iCyJbsKrmx" role="3cqZAk">
+            <node concept="37vLTw" id="5iCyJbsKrmy" role="2Oq$k0">
+              <ref role="3cqZAo" node="5iCyJbsKrmr" resolve="gp" />
+            </node>
+            <node concept="liA8E" id="5iCyJbsKrmz" role="2OqNvi">
+              <ref role="37wK5l" to="jgjw:~KeyPair.getPrivate()" resolve="getPrivate" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="5iCyJbsKrm$" role="1B3o_S" />
+      <node concept="3uibUv" id="5iCyJbsKrm_" role="3clF45">
+        <ref role="3uigEE" to="jgjw:~PrivateKey" resolve="PrivateKey" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5iCyJbsKrlz" role="jymVt" />
+    <node concept="3Tm1VV" id="5iCyJbsKrjp" role="1B3o_S" />
   </node>
 </model>
 

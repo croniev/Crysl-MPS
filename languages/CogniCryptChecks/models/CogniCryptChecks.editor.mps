@@ -37,9 +37,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
-        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
-      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -57,7 +54,6 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -90,19 +86,6 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="24kQdi" id="2OFxpwPpHmu">
-    <ref role="1XX52x" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
-    <node concept="3EZMnI" id="4HXLoTCAfg5" role="2wV5jI">
-      <node concept="l2Vlx" id="4HXLoTCAfg6" role="2iSdaV" />
-      <node concept="3F0ifn" id="4HXLoTCAgmj" role="3EZMnx">
-        <property role="3F0ifm" value="checked" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-      </node>
-      <node concept="3F1sOY" id="4HXLoTCAgq0" role="3EZMnx">
-        <ref role="1NtTu8" to="se7s:4HXLoTCAeFI" resolve="class" />
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="2skbVgoGmG1">
     <ref role="1XX52x" to="se7s:2skbVgohQUl" resolve="CogniCryptMethodErrors" />
     <node concept="3EZMnI" id="2skbVgoGmG3" role="2wV5jI">
@@ -188,10 +171,10 @@
       <node concept="3EZMnI" id="5InOA7rulf" role="3EZMnx">
         <node concept="VPM3Z" id="5InOA7rulh" role="3F10Kt" />
         <node concept="3F0ifn" id="5InOA7rulj" role="3EZMnx">
-          <property role="3F0ifm" value="Text: " />
+          <property role="3F0ifm" value="Description: " />
         </node>
         <node concept="3F0A7n" id="5InOA7e_pX" role="3EZMnx">
-          <ref role="1NtTu8" to="se7s:5InOA7epfV" resolve="text" />
+          <ref role="1NtTu8" to="se7s:5InOA7epfW" resolve="richText" />
           <node concept="ljvvj" id="5InOA7e_q4" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -200,11 +183,9 @@
       </node>
       <node concept="3EZMnI" id="5InOA7ruma" role="3EZMnx">
         <node concept="VPM3Z" id="5InOA7rumc" role="3F10Kt" />
-        <node concept="3F0ifn" id="5InOA7rume" role="3EZMnx">
-          <property role="3F0ifm" value="RichText: " />
-        </node>
+        <node concept="3F0ifn" id="5InOA7rume" role="3EZMnx" />
         <node concept="3F0A7n" id="5InOA7e_qD" role="3EZMnx">
-          <ref role="1NtTu8" to="se7s:5InOA7epfW" resolve="richText" />
+          <ref role="1NtTu8" to="se7s:5InOA7epfV" resolve="text" />
           <node concept="ljvvj" id="5InOA7fn5H" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>

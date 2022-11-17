@@ -23,6 +23,7 @@
     <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
     <import index="3t2s" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.module(MPS.IDEA/)" />
     <import index="3om3" ref="r:65e3af09-5201-4e40-9571-6b2b8ebb7239(CryslMPS.editor)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="ouo3" ref="r:2b8b6dd3-189d-4f2b-93b8-c323e1a43b98(CryslMPS.structure)" implicit="true" />
   </imports>
   <registry>
@@ -135,6 +136,9 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
+      </concept>
       <concept id="1176109685393" name="jetbrains.mps.lang.smodel.structure.Model_RootsIncludingImportedOperation" flags="nn" index="3lApI0">
         <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
@@ -151,7 +155,7 @@
   <node concept="2S6QgY" id="4HXLoTCBBPZ">
     <property role="TrG5h" value="Analyze" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
+    <ref role="2ZfgGC" to="tpee:fz12cDA" resolve="ClassConcept" />
     <node concept="2S6ZIM" id="4HXLoTCBBQ0" role="2ZfVej">
       <node concept="3clFbS" id="4HXLoTCBBQ1" role="2VODD2">
         <node concept="3clFbF" id="4HXLoTCBI2M" role="3cqZAp">
@@ -188,16 +192,16 @@
               <node concept="3cpWsn" id="lY5ZtNavXe" role="3cpWs9">
                 <property role="TrG5h" value="classNodes" />
                 <node concept="2I9FWS" id="lY5ZtNavXc" role="1tU5fm">
-                  <ref role="2I9WkF" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
+                  <ref role="2I9WkF" to="tpee:fz12cDA" resolve="ClassConcept" />
                 </node>
                 <node concept="2OqwBi" id="lY5ZtN7Yiy" role="33vP2m">
                   <node concept="2OqwBi" id="lY5ZtN7XO0" role="2Oq$k0">
                     <node concept="2Sf5sV" id="lY5ZtN7XEQ" role="2Oq$k0" />
                     <node concept="I4A8Y" id="lY5ZtN7Y6V" role="2OqNvi" />
                   </node>
-                  <node concept="3lApI0" id="lY5ZtN7Ysd" role="2OqNvi">
-                    <node concept="chp4Y" id="lY5ZtNavhn" role="3MHPDn">
-                      <ref role="cht4Q" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
+                  <node concept="2RRcyG" id="7h6k9fmMHQF" role="2OqNvi">
+                    <node concept="chp4Y" id="7h6k9fmMLi2" role="3MHsoP">
+                      <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                     </node>
                   </node>
                 </node>
@@ -257,7 +261,7 @@
               <node concept="3cpWsn" id="lY5ZtNaIO_" role="1Duv9x">
                 <property role="TrG5h" value="classNode" />
                 <node concept="3Tqbb2" id="lY5ZtNaJ4H" role="1tU5fm">
-                  <ref role="ehGHo" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
+                  <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
                 </node>
               </node>
               <node concept="37vLTw" id="lY5ZtNaJPs" role="1DdaDG">
@@ -364,7 +368,7 @@
   <node concept="2S6QgY" id="5InOA7_Egx">
     <property role="TrG5h" value="Clear" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="se7s:2OFxpwPpFXS" resolve="CheckedJavaClass" />
+    <ref role="2ZfgGC" to="tpee:fz12cDA" resolve="ClassConcept" />
     <node concept="2S6ZIM" id="5InOA7_Egy" role="2ZfVej">
       <node concept="3clFbS" id="5InOA7_Egz" role="2VODD2">
         <node concept="3clFbF" id="5InOA7_ElD" role="3cqZAp">
