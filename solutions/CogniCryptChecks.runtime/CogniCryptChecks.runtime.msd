@@ -6,6 +6,7 @@
     </modelRoot>
     <modelRoot contentPath="/home/svenja/Documents/Programming/MPSProjects/Crysl-MPS-With-CogniCrypt/dependencies" type="java_classes">
       <sourceRoot location="json_simple-1.0.2.jar" />
+      <sourceRoot location="CryptoAnalysis-2.8.0-SNAPSHOT-jar-with-dependencies-no-log4j-with-slf4j-jdk14.jar" />
     </modelRoot>
   </models>
   <facets>
