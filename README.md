@@ -18,7 +18,7 @@ Finally, restart MPS and re-open this project to be ready to use it!
 
 ## MPS Version
 
-The project is known to work on MPS version 2021.2.1 when installing mentioned dependencies from the plugin marketplace.
+The project is known to work on MPS version 2021.2.* when installing mentioned dependencies from the plugin marketplace.
 
 ## CogniCryptChecks
 
