@@ -66,9 +66,6 @@
     <dependency reexport="false">8e9fbf67-e9d6-4aec-bf8d-e721059602cb(CryslMPS)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:8e9fbf67-e9d6-4aec-bf8d-e721059602cb:CryslMPS" version="0" />
-    <language slang="l:309e0004-4976-4416-b947-ec02ae4ecef2:com.mbeddr.mpsutil.modellisteners" version="0" />
-    <language slang="l:3eada220-3310-4fd3-b794-ff924add7d8a:com.mbeddr.mpsutil.smodule" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
