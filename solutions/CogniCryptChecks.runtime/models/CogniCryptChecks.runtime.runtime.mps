@@ -10,6 +10,7 @@
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="ao3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.text(MPS.Core/)" />
@@ -240,6 +241,27 @@
         <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -762,6 +784,7 @@
       </node>
     </node>
     <node concept="2tJIrI" id="lY5ZtN6vos" role="jymVt" />
+    <node concept="2tJIrI" id="5WCIMZYFyVo" role="jymVt" />
     <node concept="3clFb_" id="lY5ZtN6_FC" role="jymVt">
       <property role="TrG5h" value="addClass" />
       <node concept="3clFbS" id="lY5ZtN6_FF" role="3clF47">
@@ -1003,7 +1026,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="lY5ZtN6zl8" role="1B3o_S" />
+      <node concept="3Tm1VV" id="5WCIMZYFg6N" role="1B3o_S" />
       <node concept="3cqZAl" id="lY5ZtN6zoS" role="3clF45" />
       <node concept="37vLTG" id="lY5ZtN6Bi9" role="3clF46">
         <property role="TrG5h" value="node" />
@@ -1014,8 +1037,32 @@
       <node concept="3uibUv" id="lY5ZtN6JDd" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
+      <node concept="P$JXv" id="5WCIMZYFY6K" role="lGtFl">
+        <node concept="TZ5HA" id="5WCIMZYFY6L" role="TZ5H$">
+          <node concept="1dT_AC" id="5WCIMZYFY6M" role="1dT_Ay">
+            <property role="1dT_AB" value="Adds a BaseLanguage ClassConcept node (so a node of a java class) to the list of classes that will be compiled to" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WCIMZYG8Ns" role="TZ5H$">
+          <node concept="1dT_AC" id="5WCIMZYG8Nt" role="1dT_Ay">
+            <property role="1dT_AB" value="bytecode and analyzed by CogniCrypt. This method will use the textgen of BaseLanguage to convert the node into a" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5WCIMZYGB$H" role="TZ5H$">
+          <node concept="1dT_AC" id="5WCIMZYGB$I" role="1dT_Ay">
+            <property role="1dT_AB" value="java file." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5WCIMZYGkI$" role="3nqlJM">
+          <property role="TUZQ4" value="The class node to be added" />
+          <node concept="zr_55" id="5WCIMZYGpSz" role="zr_5Q">
+            <ref role="zr_51" node="lY5ZtN6Bi9" resolve="node" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="lY5ZtN81VZ" role="jymVt" />
+    <node concept="2tJIrI" id="5WCIMZYGHnA" role="jymVt" />
     <node concept="3clFb_" id="lY5ZtN879P" role="jymVt">
       <property role="TrG5h" value="addCrySLSpec" />
       <node concept="3clFbS" id="lY5ZtN879S" role="3clF47">
@@ -1118,6 +1165,11 @@
       </node>
       <node concept="3uibUv" id="lY5ZtN9Oo1" role="Sfmx6">
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+      <node concept="P$JXv" id="5WCIMZYGLfL" role="lGtFl">
+        <node concept="TZ5HA" id="5WCIMZYGLfM" role="TZ5H$">
+          <node concept="1dT_AC" id="5WCIMZYGLfN" role="1dT_Ay" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="lY5ZtN4P1C" role="jymVt" />
@@ -1543,6 +1595,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3L78hgPvyqX" role="3cqZAp" />
+        <node concept="RRSsy" id="3L78hgPvCFs" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="3cpWs3" id="3L78hgPvNsf" role="RRSoy">
+            <node concept="37vLTw" id="3L78hgPvTbJ" role="3uHU7w">
+              <ref role="3cqZAo" node="5InOA6ztNt" resolve="cryptoPath" />
+            </node>
+            <node concept="Xl_RD" id="3L78hgPvCFu" role="3uHU7B">
+              <property role="Xl_RC" value="cryptoPath " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="lY5ZtNOCdf" role="3cqZAp" />
         <node concept="3cpWs8" id="lY5ZtNDNpM" role="3cqZAp">
           <node concept="3cpWsn" id="lY5ZtNDNpN" role="3cpWs9">
@@ -1595,6 +1659,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="lY5ZtNDwUA" role="3cqZAp" />
+        <node concept="RRSsy" id="72Kt6D2CqZ1" role="3cqZAp">
+          <property role="RRSoG" value="h1akgim/info" />
+          <node concept="3cpWs3" id="72Kt6D2C$QO" role="RRSoy">
+            <node concept="2OqwBi" id="72Kt6D2Da6L" role="3uHU7w">
+              <node concept="37vLTw" id="72Kt6D2CDNj" role="2Oq$k0">
+                <ref role="3cqZAo" node="lY5ZtNDNpN" resolve="builder" />
+              </node>
+              <node concept="liA8E" id="72Kt6D2DfbY" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~ProcessBuilder.command()" resolve="command" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="72Kt6D2CqZ3" role="3uHU7B">
+              <property role="Xl_RC" value="Command: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="72Kt6D2C7IT" role="3cqZAp" />
         <node concept="3cpWs6" id="lY5ZtNDDzx" role="3cqZAp">
           <node concept="2OqwBi" id="lY5ZtNFm6G" role="3cqZAk">
             <node concept="37vLTw" id="lY5ZtNFkiq" role="2Oq$k0">
@@ -2953,6 +3034,22 @@
                     </node>
                     <node concept="37vLTw" id="2skbVgovy5m" role="1DdaDG">
                       <ref role="3cqZAo" node="2skbVgoiQdq" resolve="results" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="6$k7WTNYkbT" role="3cqZAp" />
+                  <node concept="3clFbF" id="6$k7WTNWWAQ" role="3cqZAp">
+                    <node concept="2OqwBi" id="6$k7WTNWXd2" role="3clFbG">
+                      <node concept="2OqwBi" id="6$k7WTNWWKt" role="2Oq$k0">
+                        <node concept="37vLTw" id="6$k7WTNYxy3" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6vLCsARMbIL" resolve="editorContext" />
+                        </node>
+                        <node concept="liA8E" id="6$k7WTNWX4i" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6$k7WTNWXvz" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
+                      </node>
                     </node>
                   </node>
                 </node>

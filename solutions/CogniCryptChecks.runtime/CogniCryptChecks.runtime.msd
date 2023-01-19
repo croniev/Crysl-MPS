@@ -5,7 +5,7 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="../../dependencies/json_simple-1.0.2.jar" />
+      <sourceRoot path="/home/svenja/Documents/prog/projects/mps/Crysl-MPS-CogniCrypt-Test-Build/dependencies/json_simple-1.0.2.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -14,7 +14,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="${module}/../../dependencies/json_simple-1.0.2.jar" />
+    <stubModelEntry path="/home/svenja/Documents/prog/projects/mps/Crysl-MPS-CogniCrypt-Test-Build/dependencies/json_simple-1.0.2.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

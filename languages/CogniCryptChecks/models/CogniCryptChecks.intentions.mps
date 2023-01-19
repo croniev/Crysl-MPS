@@ -11,6 +11,16 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
+    <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="d155" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor.util(MPS.Editor/)" />
+    <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
+    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="tpep" ref="r:00000000-0000-4000-0000-011c895902fd(jetbrains.mps.lang.smodel.editor)" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" />
+    <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="ouo3" ref="r:2b8b6dd3-189d-4f2b-93b8-c323e1a43b98(CryslMPS.structure)" implicit="true" />
   </imports>
@@ -294,7 +304,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1Lsfe$YUtw0" role="3cqZAp" />
+            <node concept="3clFbH" id="2WCO6XTIxX4" role="3cqZAp" />
             <node concept="3clFbF" id="6vLCsARpEKn" role="3cqZAp">
               <node concept="2OqwBi" id="lY5ZtNiB6$" role="3clFbG">
                 <node concept="37vLTw" id="lY5ZtNi$rQ" role="2Oq$k0">
@@ -373,6 +383,20 @@
             <ref role="37wK5l" to="s1s7:5InOA7zR0Q" resolve="deannotate" />
             <ref role="1Pybhc" to="s1s7:4HXLoTCAUbb" resolve="CogniCryptHelper" />
             <node concept="1XNTG" id="5InOA7_EuV" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6$k7WTNXOV7" role="3cqZAp" />
+        <node concept="3clFbF" id="6$k7WTNXOVk" role="3cqZAp">
+          <node concept="2OqwBi" id="6$k7WTNXPj_" role="3clFbG">
+            <node concept="2OqwBi" id="6$k7WTNXP5z" role="2Oq$k0">
+              <node concept="1XNTG" id="6$k7WTNXOVm" role="2Oq$k0" />
+              <node concept="liA8E" id="6$k7WTNXPdj" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6$k7WTNXPty" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
+            </node>
           </node>
         </node>
       </node>
