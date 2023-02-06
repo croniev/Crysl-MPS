@@ -4,8 +4,8 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/home/croniev/Universität/5_BP/Crysl-MPS/dependencies" type="java_classes">
-      <sourceRoot location="json_simple-1.0.2.jar" />
+    <modelRoot contentPath="/home/croniev/Universität/5_BP/Crysl-MPS/dependencies/json_simple-1.0.2.jar!/" type="java_classes">
+      <sourceRoot location="." />
     </modelRoot>
   </models>
   <facets>

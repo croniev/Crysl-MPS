@@ -484,7 +484,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="lz2nStzoTd" role="3cqZAp" />
                   <node concept="3cpWs8" id="lz2nSt_O08" role="3cqZAp">
                     <node concept="3cpWsn" id="lz2nSt_O09" role="3cpWs9">
                       <property role="TrG5h" value="result" />

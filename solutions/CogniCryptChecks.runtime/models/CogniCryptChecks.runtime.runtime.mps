@@ -308,6 +308,10 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
         <child id="2034914114981261755" name="throwable" index="RRSow" />
@@ -2734,6 +2738,12 @@
                       <node concept="liA8E" id="6$k7WTNWXvz" role="2OqNvi">
                         <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
                       </node>
+                    </node>
+                  </node>
+                  <node concept="2xdQw9" id="UY0M4kQKnX" role="3cqZAp">
+                    <property role="2xdLsb" value="h1akgim/info" />
+                    <node concept="Xl_RD" id="UY0M4kQKnZ" role="9lYJi">
+                      <property role="Xl_RC" value="Finished Cognicrypt Analysis" />
                     </node>
                   </node>
                 </node>
